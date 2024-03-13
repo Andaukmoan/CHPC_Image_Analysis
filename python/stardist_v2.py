@@ -7,7 +7,9 @@ from stardist.models import StarDist2D
 from csbdeep.utils import normalize
 from csbdeep.io import save_tiff_imagej_compatible
 
-INDIR=sys.argv[1]
+INIMG=sys.argv[1]
+
+INDIR=INIMG+"/"
 
 INFILES=os.listdir(INDIR)
 
