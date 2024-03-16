@@ -340,13 +340,17 @@ ExportToSpreadsheet:[module_num:21|svn_version:'Unknown'|variable_revision_numbe
     Select source of sample row name:Metadata
     Select the image to use as the identifier:None
     Select the metadata to use as the identifier:None
-    Export all measurement types?:Yes
+    Export all measurement types?:No
     Press button to select measurements:
     Representation of Nan/Inf:NaN
     Add a prefix to file names?:Yes
     Filename prefix:MyExpt_
     Overwrite existing files without warning?:No
-    Data to export:Do not use
+    Data to export:Object relationships
+    Combine these object measurements with those of the previous object?:No
+    File name:Object_relationship.csv
+    Use the object name for the file name?:No
+    Data to export:Image
     Combine these object measurements with those of the previous object?:No
     File name:DATA.csv
     Use the object name for the file name?:Yes
