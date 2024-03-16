@@ -1,9 +1,9 @@
-#This repository is for the basics of running our image analysis pipeline on the University of Utah's CHPC.
+### This repository is for the basics of running our image analysis pipeline on the University of Utah's CHPC.
 
 In order to use PaternaBio's allocation on the Redwood cluster, you will need to get an account with CHPC, complete their protected enivronment(PE) application, ask for access to proj_paternabio (redwood cluster), and ask for access to submit batches to paternabio-rw.
-More details for setting up your CHPC account that can be found on their website.
+More details for setting up your CHPC account can be found on their website.
 
-#Setup
+# Setup
 
 Install stardist:
 
@@ -21,7 +21,7 @@ export PYTHONUSERBASE=/uufs/chpc.utah.edu/common/HIPAA/<your ID>
 python -m pip install --user stardist
 ```
 
-#Submit batch
+# Submit batch
 
 The pipelines from this repository can be found in proj_paternabio/image_analysis/slurm.
 ```
@@ -39,9 +39,9 @@ Set "#SBATCH --mail-user=" to your email. You will receive emails when jobs star
 
 Set "INIMG=" to the location of the images you are analyzing.
 
-Set "OUTXL=" to the location for your output. Ideally this should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if does not yet exist.
+Set "OUTXL=" to the location for your output. Ideally this should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if it does not yet exist.
 
-Press ctrl+X to leave the file. Save it with a unique file name to create a record of analyses that have been run.
+Press ctrl+X to leave the file. Save it with a unique file name to create a record of analyses that have been run and prevent making unintended changes to the base file.
 
 Set the permissions of your new file to be executable:
 ```
@@ -80,7 +80,7 @@ scp /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/<your output path>/<your fi
 ```
 For example:
 ```
-scp /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/ZachO/SLURM/output/2024-03-15_09-49-57_DDX4_EdU_all_images.csv /Users/olsen/Desktop
+scp /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/user/SLURM/output/2024-03-15_09-49-57_DDX4_EdU_all_images.csv /Users/user/Desktop
 ```
 
 The results can then be used in for downstream processing or visualization. 
