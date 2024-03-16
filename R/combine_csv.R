@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-#Pass variable from BASH to R
+#Pass variable from bash to R
 args <- commandArgs(trailingOnly =TRUE)
 #Get file path (args[1]="--args")
 file_path <- args[2]
