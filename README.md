@@ -69,10 +69,16 @@ When your run is finished a slurm output file will be generated. You can check t
 nano slurm-<jobID>.out
 ```
 
-The cell counts from your analysis will be in your chosen output folder with a file name <date>_<time>_<pipeline>_all_images.csv.
+There are two output files.
+
+1. The cell counts from your analysis will be in your chosen output folder with a file name <date>_<time>_<pipeline>_all_images.csv.
+
+2. The cell relationships for colony counts will be in your chosen output folder with a file name <data>_<time>_<pipeline>_object_relationships.csv.
+
 For example:
 
-2024-03-15_09-49-57_DDX4_EdU_all_images.csv
+1. 2024-03-15_09-49-57_DDX4_EdU_all_images.csv
+2. 2024-03-15_09-50-03_DDX4_EdU_object_relationships.csv
 
 Download the results by putting this code with your specific details into your terminal:
 ```
