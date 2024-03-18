@@ -31,11 +31,7 @@ TASKSIZE=$(($SETS/$NTASKS+1))
 
 echo $TASKSIZE
 
-if [[$TASKSIZE -lt 2]]; then
-    MYARRAY=($(awk -v SETS="$SETS" 'BEGIN{e=1;m=SETS;for(i=1;i<=m;i+=2){k=m-i;if(k<2){e=k};print i, i+e}}'))
-else
-    MYARRAY=($(awk -v SETS="$SETS" -v SIZE="$TASKSIZE" 'BEGIN{e=SIZE-1;m=SETS;for(i=1;i<=m;i+=SIZE){k=m-i;if(k<SIZE){e=k};print i, i+e}}'))
-fi
+MYARRAY=($(awk -v SETS="$SETS" -v SIZE="$TASKSIZE" 'BEGIN{e=SIZE-1;m=SETS;for(i=1;i<=m;i+=SIZE){k=m-i;if(k<SIZE){e=k};print i, i+e}}'))
 
 echo "${MYARRAY[1]}"
 echo "${MYARRAY[-1]}"
