@@ -1,7 +1,4 @@
 #Load packages
-packages <- c("readxl","xlsx")
-install.packages(setdiff(packages, rownames(installed.packages()))) 
-library(readxl)
 library(xlsx)
 
 #Choose path to database file
