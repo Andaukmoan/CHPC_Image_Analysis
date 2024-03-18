@@ -37,7 +37,12 @@ nano DDX4_EdU_batch.sh
 
 Set "#SBATCH --mail-user=" to your email. You will receive emails when jobs start and finish.
 
-Set "INIMG=" to the location of the images you are analyzing.
+Set "INIMG=" to the location of the images you are analyzing. This pipeline assumes only files that need to be analyzed are in that folder. Remove any files in the folder that are not meant to be analyzed before running the script. Most often the issue comes from jpg and scanprotocol files. You can remove them using:
+```
+cd /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/<your folder>
+rm *.jpg
+rm *.scanprotocol
+```
 
 Set "OUTXL=" to the location for your output. This should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if it does not yet exist.
 
