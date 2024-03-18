@@ -39,7 +39,7 @@ Set "#SBATCH --mail-user=" to your email. You will receive emails when jobs star
 
 Set "INIMG=" to the location of the images you are analyzing.
 
-Set "OUTXL=" to the location for your output. Ideally this should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if it does not yet exist.
+Set "OUTXL=" to the location for your output. This should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if it does not yet exist.
 
 Press ctrl+X to leave the file. Save it with a unique file name to create a record of analyses that have been run and prevent making unintended changes to the base file.
 
