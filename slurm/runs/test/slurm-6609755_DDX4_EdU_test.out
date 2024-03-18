@@ -1,0 +1,1072 @@
+2024-03-18 08:52:16.919863: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2024-03-18 08:52:16.919903: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (rw215): /proc/driver/nvidia/version does not exist
+2024-03-18 08:52:16.922682: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-03-18 08:52:17.570845: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+__init__.py (43): Converting data type from 'int32' to ImageJ-compatible 'int16'.
+Found model '2D_versatile_fluo' for 'StarDist2D'.
+Loading network weights from 'weights_best.h5'.
+Loading thresholds from 'thresholds.json'.
+Using default values: prob_thresh=0.479071, nms_thresh=0.3.
+Finished Segmentation
+/uufs/redwood.bridges/sys/var/slurm/slurmd.spool/rw215//job6609755/slurm_script: line 32: [[: command not found
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LabelBinarizer from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MLPClassifier from version 0.24.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 20, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 6, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 20, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 6, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 17, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 17, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 30, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 1, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 30, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 1, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 28, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 23, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 28, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 4, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 23, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 8, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 4, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 8, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 31, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 31, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 5, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 21, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 5, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 3, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 21, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 3, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 13, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 13, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 14, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 14, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 10, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 18, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 10, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 25, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 18, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 25, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 2, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 29, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 2, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 11, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 29, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 32, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 12, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 15, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 11, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 24, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 19, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 32, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 15, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 12, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 33, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 24, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 16, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 19, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 33, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 16, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 7, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 34, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 7, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 34, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 27, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 27, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 22, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 26, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 22, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 26, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Times reported are CPU and Wall-clock times for each module
+Mon Mar 18 08:53:01 2024: Image # 9, module Images # 1: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 9, module Metadata # 2: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 20, module NamesAndTypes # 3: CPU_time = 5.36 secs, Wall_time = 1.88 secs
+Mon Mar 18 08:53:03 2024: Image # 20, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 18, module NamesAndTypes # 3: CPU_time = 4.99 secs, Wall_time = 1.80 secs
+Mon Mar 18 08:53:03 2024: Image # 18, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 34, module NamesAndTypes # 3: CPU_time = 5.33 secs, Wall_time = 1.78 secs
+Mon Mar 18 08:53:01 2024: Image # 6, module NamesAndTypes # 3: CPU_time = 5.33 secs, Wall_time = 1.91 secs
+Mon Mar 18 08:53:03 2024: Image # 34, module Groups # 4: CPU_time = 0.01 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 6, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 25, module NamesAndTypes # 3: CPU_time = 5.51 secs, Wall_time = 1.84 secs
+Mon Mar 18 08:53:01 2024: Image # 28, module NamesAndTypes # 3: CPU_time = 5.49 secs, Wall_time = 1.90 secs
+Mon Mar 18 08:53:03 2024: Image # 25, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 28, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 10, module NamesAndTypes # 3: CPU_time = 5.32 secs, Wall_time = 1.85 secs
+Mon Mar 18 08:53:03 2024: Image # 10, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 8, module NamesAndTypes # 3: CPU_time = 5.78 secs, Wall_time = 1.91 secs
+Mon Mar 18 08:53:01 2024: Image # 30, module NamesAndTypes # 3: CPU_time = 5.76 secs, Wall_time = 1.92 secs
+Mon Mar 18 08:53:03 2024: Image # 8, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 30, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 27, module NamesAndTypes # 3: CPU_time = 4.87 secs, Wall_time = 1.82 secs
+Mon Mar 18 08:53:03 2024: Image # 27, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 7, module NamesAndTypes # 3: CPU_time = 5.62 secs, Wall_time = 1.84 secs
+Mon Mar 18 08:53:01 2024: Image # 17, module NamesAndTypes # 3: CPU_time = 5.75 secs, Wall_time = 1.95 secs
+Mon Mar 18 08:53:03 2024: Image # 7, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 17, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 15, module NamesAndTypes # 3: CPU_time = 5.28 secs, Wall_time = 1.88 secs
+Mon Mar 18 08:53:03 2024: Image # 15, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 5, module NamesAndTypes # 3: CPU_time = 5.58 secs, Wall_time = 1.94 secs
+Mon Mar 18 08:53:01 2024: Image # 1, module NamesAndTypes # 3: CPU_time = 5.29 secs, Wall_time = 1.97 secs
+Mon Mar 18 08:53:01 2024: Image # 23, module NamesAndTypes # 3: CPU_time = 4.82 secs, Wall_time = 1.97 secs
+Mon Mar 18 08:53:03 2024: Image # 1, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 5, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 23, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 14, module NamesAndTypes # 3: CPU_time = 5.63 secs, Wall_time = 1.93 secs
+Mon Mar 18 08:53:01 2024: Image # 24, module NamesAndTypes # 3: CPU_time = 5.35 secs, Wall_time = 1.90 secs
+Mon Mar 18 08:53:01 2024: Image # 11, module NamesAndTypes # 3: CPU_time = 6.23 secs, Wall_time = 1.91 secs
+Mon Mar 18 08:53:03 2024: Image # 14, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 24, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 11, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 19, module NamesAndTypes # 3: CPU_time = 5.47 secs, Wall_time = 1.93 secs
+Mon Mar 18 08:53:03 2024: Image # 19, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 4, module NamesAndTypes # 3: CPU_time = 5.15 secs, Wall_time = 2.01 secs
+Mon Mar 18 08:53:01 2024: Image # 32, module NamesAndTypes # 3: CPU_time = 5.57 secs, Wall_time = 1.95 secs
+Mon Mar 18 08:53:03 2024: Image # 4, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 32, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 21, module NamesAndTypes # 3: CPU_time = 6.12 secs, Wall_time = 1.99 secs
+Mon Mar 18 08:53:03 2024: Image # 21, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 3, module NamesAndTypes # 3: CPU_time = 5.90 secs, Wall_time = 2.00 secs
+Mon Mar 18 08:53:03 2024: Image # 3, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 31, module NamesAndTypes # 3: CPU_time = 5.73 secs, Wall_time = 2.02 secs
+Mon Mar 18 08:53:01 2024: Image # 22, module NamesAndTypes # 3: CPU_time = 5.88 secs, Wall_time = 1.93 secs
+Mon Mar 18 08:53:03 2024: Image # 31, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 22, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 26, module NamesAndTypes # 3: CPU_time = 4.94 secs, Wall_time = 1.94 secs
+Mon Mar 18 08:53:03 2024: Image # 26, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 33, module NamesAndTypes # 3: CPU_time = 6.64 secs, Wall_time = 2.00 secs
+Mon Mar 18 08:53:03 2024: Image # 17, module MeasureObjectSizeShape # 5: CPU_time = 0.12 secs, Wall_time = 0.13 secs
+Mon Mar 18 08:53:03 2024: Image # 33, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 16, module NamesAndTypes # 3: CPU_time = 5.81 secs, Wall_time = 2.00 secs
+Mon Mar 18 08:53:03 2024: Image # 16, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 6, module MeasureObjectSizeShape # 5: CPU_time = 0.20 secs, Wall_time = 0.21 secs
+Mon Mar 18 08:53:01 2024: Image # 29, module NamesAndTypes # 3: CPU_time = 5.20 secs, Wall_time = 2.02 secs
+Mon Mar 18 08:53:03 2024: Image # 29, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 2, module NamesAndTypes # 3: CPU_time = 5.25 secs, Wall_time = 2.04 secs
+Mon Mar 18 08:53:03 2024: Image # 30, module MeasureObjectSizeShape # 5: CPU_time = 0.31 secs, Wall_time = 0.19 secs
+Mon Mar 18 08:53:03 2024: Image # 2, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 9, module NamesAndTypes # 3: CPU_time = 5.97 secs, Wall_time = 1.93 secs
+Mon Mar 18 08:53:03 2024: Image # 9, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 14, module MeasureObjectSizeShape # 5: CPU_time = 0.22 secs, Wall_time = 0.14 secs
+Mon Mar 18 08:53:03 2024: Image # 34, module MeasureObjectSizeShape # 5: CPU_time = 0.37 secs, Wall_time = 0.25 secs
+Mon Mar 18 08:53:03 2024: Image # 25, module MeasureObjectSizeShape # 5: CPU_time = 0.23 secs, Wall_time = 0.23 secs
+Mon Mar 18 08:53:03 2024: Image # 20, module MeasureObjectSizeShape # 5: CPU_time = 0.33 secs, Wall_time = 0.31 secs
+Mon Mar 18 08:53:03 2024: Image # 21, module MeasureObjectSizeShape # 5: CPU_time = 0.18 secs, Wall_time = 0.13 secs
+Mon Mar 18 08:53:01 2024: Image # 12, module NamesAndTypes # 3: CPU_time = 6.20 secs, Wall_time = 2.12 secs
+Mon Mar 18 08:53:03 2024: Image # 12, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:01 2024: Image # 13, module NamesAndTypes # 3: CPU_time = 5.83 secs, Wall_time = 2.16 secs
+Mon Mar 18 08:53:03 2024: Image # 13, module Groups # 4: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:53:03 2024: Image # 3, module MeasureObjectSizeShape # 5: CPU_time = 0.23 secs, Wall_time = 0.19 secs
+Mon Mar 18 08:53:03 2024: Image # 18, module MeasureObjectSizeShape # 5: CPU_time = 0.35 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 4, module MeasureObjectSizeShape # 5: CPU_time = 0.21 secs, Wall_time = 0.22 secs
+Mon Mar 18 08:53:03 2024: Image # 5, module MeasureObjectSizeShape # 5: CPU_time = 0.25 secs, Wall_time = 0.27 secs
+Mon Mar 18 08:53:03 2024: Image # 15, module MeasureObjectSizeShape # 5: CPU_time = 0.36 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:53:03 2024: Image # 1, module MeasureObjectSizeShape # 5: CPU_time = 0.35 secs, Wall_time = 0.30 secs
+Mon Mar 18 08:53:03 2024: Image # 11, module MeasureObjectSizeShape # 5: CPU_time = 0.29 secs, Wall_time = 0.31 secs
+Mon Mar 18 08:53:03 2024: Image # 10, module MeasureObjectSizeShape # 5: CPU_time = 0.40 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:53:03 2024: Image # 19, module MeasureObjectSizeShape # 5: CPU_time = 0.33 secs, Wall_time = 0.34 secs
+Mon Mar 18 08:53:03 2024: Image # 12, module MeasureObjectSizeShape # 5: CPU_time = 0.27 secs, Wall_time = 0.21 secs
+Mon Mar 18 08:53:03 2024: Image # 13, module MeasureObjectSizeShape # 5: CPU_time = 0.26 secs, Wall_time = 0.21 secs
+Mon Mar 18 08:53:03 2024: Image # 2, module MeasureObjectSizeShape # 5: CPU_time = 0.27 secs, Wall_time = 0.30 secs
+Mon Mar 18 08:53:03 2024: Image # 31, module MeasureObjectSizeShape # 5: CPU_time = 0.44 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:53:03 2024: Image # 6, module FilterObjects # 6: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:53:03 2024: Image # 17, module FilterObjects # 6: CPU_time = 0.38 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 7, module MeasureObjectSizeShape # 5: CPU_time = 0.69 secs, Wall_time = 0.51 secs
+Mon Mar 18 08:53:03 2024: Image # 33, module MeasureObjectSizeShape # 5: CPU_time = 0.37 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:53:03 2024: Image # 24, module MeasureObjectSizeShape # 5: CPU_time = 0.52 secs, Wall_time = 0.48 secs
+Mon Mar 18 08:53:03 2024: Image # 28, module MeasureObjectSizeShape # 5: CPU_time = 0.50 secs, Wall_time = 0.56 secs
+Mon Mar 18 08:53:03 2024: Image # 30, module FilterObjects # 6: CPU_time = 0.38 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:53:03 2024: Image # 9, module MeasureObjectSizeShape # 5: CPU_time = 0.34 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 14, module FilterObjects # 6: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 32, module MeasureObjectSizeShape # 5: CPU_time = 0.45 secs, Wall_time = 0.47 secs
+Mon Mar 18 08:53:03 2024: Image # 25, module FilterObjects # 6: CPU_time = 0.36 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 34, module FilterObjects # 6: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:53:03 2024: Image # 20, module FilterObjects # 6: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 21, module FilterObjects # 6: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 18, module FilterObjects # 6: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:53:03 2024: Image # 3, module FilterObjects # 6: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 8, module MeasureObjectSizeShape # 5: CPU_time = 0.75 secs, Wall_time = 0.70 secs
+Mon Mar 18 08:53:03 2024: Image # 5, module FilterObjects # 6: CPU_time = 0.44 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:53:03 2024: Image # 15, module FilterObjects # 6: CPU_time = 0.44 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:53:03 2024: Image # 16, module MeasureObjectSizeShape # 5: CPU_time = 0.52 secs, Wall_time = 0.57 secs
+Mon Mar 18 08:53:03 2024: Image # 4, module FilterObjects # 6: CPU_time = 0.42 secs, Wall_time = 0.42 secs
+Mon Mar 18 08:53:03 2024: Image # 11, module FilterObjects # 6: CPU_time = 0.37 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:53:03 2024: Image # 27, module MeasureObjectSizeShape # 5: CPU_time = 0.68 secs, Wall_time = 0.74 secs
+Mon Mar 18 08:53:03 2024: Image # 1, module FilterObjects # 6: CPU_time = 0.41 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:53:03 2024: Image # 22, module MeasureObjectSizeShape # 5: CPU_time = 0.64 secs, Wall_time = 0.67 secs
+Mon Mar 18 08:53:03 2024: Image # 10, module FilterObjects # 6: CPU_time = 0.39 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:53:03 2024: Image # 26, module MeasureObjectSizeShape # 5: CPU_time = 0.68 secs, Wall_time = 0.69 secs
+Mon Mar 18 08:53:03 2024: Image # 23, module MeasureObjectSizeShape # 5: CPU_time = 0.76 secs, Wall_time = 0.79 secs
+Mon Mar 18 08:53:03 2024: Image # 19, module FilterObjects # 6: CPU_time = 0.41 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:53:03 2024: Image # 2, module FilterObjects # 6: CPU_time = 0.39 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 31, module FilterObjects # 6: CPU_time = 0.39 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:03 2024: Image # 13, module FilterObjects # 6: CPU_time = 0.41 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:53:03 2024: Image # 12, module FilterObjects # 6: CPU_time = 0.42 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:53:03 2024: Image # 24, module FilterObjects # 6: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:53:03 2024: Image # 33, module FilterObjects # 6: CPU_time = 0.44 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:53:03 2024: Image # 9, module FilterObjects # 6: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:53:03 2024: Image # 32, module FilterObjects # 6: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:53:03 2024: Image # 29, module MeasureObjectSizeShape # 5: CPU_time = 0.79 secs, Wall_time = 0.80 secs
+Mon Mar 18 08:53:03 2024: Image # 7, module FilterObjects # 6: CPU_time = 0.44 secs, Wall_time = 0.44 secs
+Mon Mar 18 08:53:03 2024: Image # 28, module FilterObjects # 6: CPU_time = 0.55 secs, Wall_time = 0.54 secs
+Mon Mar 18 08:53:04 2024: Image # 8, module FilterObjects # 6: CPU_time = 0.39 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:53:04 2024: Image # 16, module FilterObjects # 6: CPU_time = 0.38 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:04 2024: Image # 27, module FilterObjects # 6: CPU_time = 0.39 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:53:04 2024: Image # 26, module FilterObjects # 6: CPU_time = 0.40 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:53:04 2024: Image # 22, module FilterObjects # 6: CPU_time = 0.66 secs, Wall_time = 0.65 secs
+Mon Mar 18 08:53:04 2024: Image # 23, module FilterObjects # 6: CPU_time = 0.66 secs, Wall_time = 0.66 secs
+Mon Mar 18 08:53:04 2024: Image # 29, module FilterObjects # 6: CPU_time = 0.67 secs, Wall_time = 0.65 secs
+Mon Mar 18 08:53:03 2024: Image # 6, module IdentifySecondaryObjects # 7: CPU_time = 1.53 secs, Wall_time = 1.49 secs
+Mon Mar 18 08:53:03 2024: Image # 14, module IdentifySecondaryObjects # 7: CPU_time = 1.53 secs, Wall_time = 1.50 secs
+Mon Mar 18 08:53:03 2024: Image # 17, module IdentifySecondaryObjects # 7: CPU_time = 1.68 secs, Wall_time = 1.66 secs
+Mon Mar 18 08:53:05 2024: Image # 6, module IdentifyTertiaryObjects # 8: CPU_time = 0.20 secs, Wall_time = 0.21 secs
+Mon Mar 18 08:53:04 2024: Image # 11, module IdentifySecondaryObjects # 7: CPU_time = 1.55 secs, Wall_time = 1.51 secs
+Mon Mar 18 08:53:03 2024: Image # 25, module IdentifySecondaryObjects # 7: CPU_time = 1.71 secs, Wall_time = 1.68 secs
+Mon Mar 18 08:53:03 2024: Image # 20, module IdentifySecondaryObjects # 7: CPU_time = 1.71 secs, Wall_time = 1.67 secs
+Mon Mar 18 08:53:05 2024: Image # 14, module IdentifyTertiaryObjects # 8: CPU_time = 0.25 secs, Wall_time = 0.26 secs
+Mon Mar 18 08:53:04 2024: Image # 15, module IdentifySecondaryObjects # 7: CPU_time = 1.67 secs, Wall_time = 1.64 secs
+Mon Mar 18 08:53:04 2024: Image # 5, module IdentifySecondaryObjects # 7: CPU_time = 1.69 secs, Wall_time = 1.66 secs
+Mon Mar 18 08:53:04 2024: Image # 13, module IdentifySecondaryObjects # 7: CPU_time = 1.59 secs, Wall_time = 1.55 secs
+Mon Mar 18 08:53:04 2024: Image # 3, module IdentifySecondaryObjects # 7: CPU_time = 1.81 secs, Wall_time = 1.76 secs
+Mon Mar 18 08:53:03 2024: Image # 30, module IdentifySecondaryObjects # 7: CPU_time = 1.93 secs, Wall_time = 1.91 secs
+Mon Mar 18 08:53:04 2024: Image # 18, module IdentifySecondaryObjects # 7: CPU_time = 1.83 secs, Wall_time = 1.79 secs
+Mon Mar 18 08:53:04 2024: Image # 1, module IdentifySecondaryObjects # 7: CPU_time = 1.75 secs, Wall_time = 1.72 secs
+Mon Mar 18 08:53:03 2024: Image # 21, module IdentifySecondaryObjects # 7: CPU_time = 1.93 secs, Wall_time = 1.88 secs
+Mon Mar 18 08:53:05 2024: Image # 11, module IdentifyTertiaryObjects # 8: CPU_time = 0.25 secs, Wall_time = 0.25 secs
+Mon Mar 18 08:53:05 2024: Image # 25, module IdentifyTertiaryObjects # 8: CPU_time = 0.24 secs, Wall_time = 0.24 secs
+Mon Mar 18 08:53:03 2024: Image # 34, module IdentifySecondaryObjects # 7: CPU_time = 1.95 secs, Wall_time = 1.94 secs
+Mon Mar 18 08:53:05 2024: Image # 17, module IdentifyTertiaryObjects # 8: CPU_time = 0.34 secs, Wall_time = 0.35 secs
+Mon Mar 18 08:53:04 2024: Image # 7, module IdentifySecondaryObjects # 7: CPU_time = 1.60 secs, Wall_time = 1.57 secs
+Mon Mar 18 08:53:05 2024: Image # 20, module IdentifyTertiaryObjects # 8: CPU_time = 0.28 secs, Wall_time = 0.28 secs
+Mon Mar 18 08:53:04 2024: Image # 10, module IdentifySecondaryObjects # 7: CPU_time = 1.79 secs, Wall_time = 1.75 secs
+Mon Mar 18 08:53:04 2024: Image # 19, module IdentifySecondaryObjects # 7: CPU_time = 1.77 secs, Wall_time = 1.72 secs
+Mon Mar 18 08:53:04 2024: Image # 4, module IdentifySecondaryObjects # 7: CPU_time = 1.95 secs, Wall_time = 1.90 secs
+Mon Mar 18 08:53:05 2024: Image # 15, module IdentifyTertiaryObjects # 8: CPU_time = 0.30 secs, Wall_time = 0.31 secs
+Mon Mar 18 08:53:05 2024: Image # 5, module IdentifyTertiaryObjects # 8: CPU_time = 0.29 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:53:04 2024: Image # 24, module IdentifySecondaryObjects # 7: CPU_time = 1.81 secs, Wall_time = 1.78 secs
+Mon Mar 18 08:53:04 2024: Image # 31, module IdentifySecondaryObjects # 7: CPU_time = 1.85 secs, Wall_time = 1.82 secs
+Mon Mar 18 08:53:05 2024: Image # 18, module IdentifyTertiaryObjects # 8: CPU_time = 0.24 secs, Wall_time = 0.24 secs
+Mon Mar 18 08:53:04 2024: Image # 16, module IdentifySecondaryObjects # 7: CPU_time = 1.66 secs, Wall_time = 1.62 secs
+Mon Mar 18 08:53:04 2024: Image # 2, module IdentifySecondaryObjects # 7: CPU_time = 1.91 secs, Wall_time = 1.87 secs
+Mon Mar 18 08:53:04 2024: Image # 9, module IdentifySecondaryObjects # 7: CPU_time = 1.81 secs, Wall_time = 1.78 secs
+Mon Mar 18 08:53:05 2024: Image # 3, module IdentifyTertiaryObjects # 8: CPU_time = 0.30 secs, Wall_time = 0.31 secs
+Mon Mar 18 08:53:05 2024: Image # 13, module IdentifyTertiaryObjects # 8: CPU_time = 0.32 secs, Wall_time = 0.32 secs
+Mon Mar 18 08:53:04 2024: Image # 12, module IdentifySecondaryObjects # 7: CPU_time = 1.92 secs, Wall_time = 1.87 secs
+Mon Mar 18 08:53:05 2024: Image # 21, module IdentifyTertiaryObjects # 8: CPU_time = 0.27 secs, Wall_time = 0.27 secs
+Mon Mar 18 08:53:05 2024: Image # 34, module IdentifyTertiaryObjects # 8: CPU_time = 0.24 secs, Wall_time = 0.25 secs
+Mon Mar 18 08:53:05 2024: Image # 10, module IdentifyTertiaryObjects # 8: CPU_time = 0.23 secs, Wall_time = 0.23 secs
+Mon Mar 18 08:53:04 2024: Image # 27, module IdentifySecondaryObjects # 7: CPU_time = 1.69 secs, Wall_time = 1.65 secs
+Mon Mar 18 08:53:04 2024: Image # 33, module IdentifySecondaryObjects # 7: CPU_time = 1.90 secs, Wall_time = 1.85 secs
+Mon Mar 18 08:53:05 2024: Image # 7, module IdentifyTertiaryObjects # 8: CPU_time = 0.26 secs, Wall_time = 0.26 secs
+Mon Mar 18 08:53:05 2024: Image # 30, module IdentifyTertiaryObjects # 8: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:53:04 2024: Image # 32, module IdentifySecondaryObjects # 7: CPU_time = 1.93 secs, Wall_time = 1.89 secs
+Mon Mar 18 08:53:05 2024: Image # 1, module IdentifyTertiaryObjects # 8: CPU_time = 0.41 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:53:05 2024: Image # 4, module IdentifyTertiaryObjects # 8: CPU_time = 0.28 secs, Wall_time = 0.28 secs
+Mon Mar 18 08:53:06 2024: Image # 24, module IdentifyTertiaryObjects # 8: CPU_time = 0.24 secs, Wall_time = 0.24 secs
+Mon Mar 18 08:53:05 2024: Image # 19, module IdentifyTertiaryObjects # 8: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:06 2024: Image # 31, module IdentifyTertiaryObjects # 8: CPU_time = 0.29 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:53:06 2024: Image # 9, module IdentifyTertiaryObjects # 8: CPU_time = 0.25 secs, Wall_time = 0.26 secs
+Mon Mar 18 08:53:04 2024: Image # 8, module IdentifySecondaryObjects # 7: CPU_time = 1.92 secs, Wall_time = 1.90 secs
+Mon Mar 18 08:53:06 2024: Image # 16, module IdentifyTertiaryObjects # 8: CPU_time = 0.29 secs, Wall_time = 0.30 secs
+Mon Mar 18 08:53:06 2024: Image # 33, module IdentifyTertiaryObjects # 8: CPU_time = 0.24 secs, Wall_time = 0.25 secs
+Mon Mar 18 08:53:06 2024: Image # 2, module IdentifyTertiaryObjects # 8: CPU_time = 0.32 secs, Wall_time = 0.32 secs
+Mon Mar 18 08:53:06 2024: Image # 27, module IdentifyTertiaryObjects # 8: CPU_time = 0.30 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:53:04 2024: Image # 26, module IdentifySecondaryObjects # 7: CPU_time = 1.91 secs, Wall_time = 1.87 secs
+Mon Mar 18 08:53:06 2024: Image # 12, module IdentifyTertiaryObjects # 8: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:53:06 2024: Image # 32, module IdentifyTertiaryObjects # 8: CPU_time = 0.35 secs, Wall_time = 0.35 secs
+Mon Mar 18 08:53:06 2024: Image # 8, module IdentifyTertiaryObjects # 8: CPU_time = 0.24 secs, Wall_time = 0.24 secs
+Mon Mar 18 08:53:06 2024: Image # 26, module IdentifyTertiaryObjects # 8: CPU_time = 0.26 secs, Wall_time = 0.26 secs
+Mon Mar 18 08:53:04 2024: Image # 28, module IdentifySecondaryObjects # 7: CPU_time = 2.89 secs, Wall_time = 2.83 secs
+Mon Mar 18 08:53:05 2024: Image # 6, module MeasureObjectIntensity # 9: CPU_time = 2.09 secs, Wall_time = 2.00 secs
+Mon Mar 18 08:53:05 2024: Image # 14, module MeasureObjectIntensity # 9: CPU_time = 2.09 secs, Wall_time = 2.01 secs
+Mon Mar 18 08:53:04 2024: Image # 22, module IdentifySecondaryObjects # 7: CPU_time = 3.03 secs, Wall_time = 2.98 secs
+Mon Mar 18 08:53:07 2024: Image # 28, module IdentifyTertiaryObjects # 8: CPU_time = 0.51 secs, Wall_time = 0.52 secs
+Mon Mar 18 08:53:04 2024: Image # 29, module IdentifySecondaryObjects # 7: CPU_time = 3.16 secs, Wall_time = 2.94 secs
+Mon Mar 18 08:53:04 2024: Image # 23, module IdentifySecondaryObjects # 7: CPU_time = 3.33 secs, Wall_time = 3.22 secs
+Mon Mar 18 08:53:06 2024: Image # 21, module MeasureObjectIntensity # 9: CPU_time = 2.08 secs, Wall_time = 2.14 secs
+Mon Mar 18 08:53:06 2024: Image # 5, module MeasureObjectIntensity # 9: CPU_time = 2.30 secs, Wall_time = 2.24 secs
+Mon Mar 18 08:53:06 2024: Image # 18, module MeasureObjectIntensity # 9: CPU_time = 2.27 secs, Wall_time = 2.23 secs
+Mon Mar 18 08:53:05 2024: Image # 11, module MeasureObjectIntensity # 9: CPU_time = 2.37 secs, Wall_time = 2.57 secs
+Mon Mar 18 08:53:06 2024: Image # 13, module MeasureObjectIntensity # 9: CPU_time = 2.34 secs, Wall_time = 2.43 secs
+Mon Mar 18 08:53:05 2024: Image # 17, module MeasureObjectIntensity # 9: CPU_time = 2.62 secs, Wall_time = 2.65 secs
+Mon Mar 18 08:53:07 2024: Image # 29, module IdentifyTertiaryObjects # 8: CPU_time = 0.58 secs, Wall_time = 0.67 secs
+Mon Mar 18 08:53:07 2024: Image # 22, module IdentifyTertiaryObjects # 8: CPU_time = 0.64 secs, Wall_time = 0.82 secs
+Mon Mar 18 08:53:05 2024: Image # 25, module MeasureObjectIntensity # 9: CPU_time = 2.67 secs, Wall_time = 2.98 secs
+Mon Mar 18 08:53:06 2024: Image # 1, module MeasureObjectIntensity # 9: CPU_time = 2.44 secs, Wall_time = 2.81 secs
+Mon Mar 18 08:53:06 2024: Image # 7, module MeasureObjectIntensity # 9: CPU_time = 2.47 secs, Wall_time = 3.06 secs
+Mon Mar 18 08:53:05 2024: Image # 20, module MeasureObjectIntensity # 9: CPU_time = 2.82 secs, Wall_time = 3.34 secs
+Mon Mar 18 08:53:06 2024: Image # 19, module MeasureObjectIntensity # 9: CPU_time = 2.56 secs, Wall_time = 3.08 secs
+Mon Mar 18 08:53:06 2024: Image # 10, module MeasureObjectIntensity # 9: CPU_time = 2.57 secs, Wall_time = 3.33 secs
+Mon Mar 18 08:53:08 2024: Image # 23, module IdentifyTertiaryObjects # 8: CPU_time = 0.61 secs, Wall_time = 1.38 secs
+Mon Mar 18 08:53:06 2024: Image # 15, module MeasureObjectIntensity # 9: CPU_time = 2.83 secs, Wall_time = 3.84 secs
+Mon Mar 18 08:53:06 2024: Image # 34, module MeasureObjectIntensity # 9: CPU_time = 2.75 secs, Wall_time = 4.12 secs
+Mon Mar 18 08:53:06 2024: Image # 31, module MeasureObjectIntensity # 9: CPU_time = 2.57 secs, Wall_time = 3.95 secs
+Mon Mar 18 08:53:06 2024: Image # 3, module MeasureObjectIntensity # 9: CPU_time = 2.83 secs, Wall_time = 4.20 secs
+Mon Mar 18 08:53:06 2024: Image # 30, module MeasureObjectIntensity # 9: CPU_time = 2.78 secs, Wall_time = 4.50 secs
+Mon Mar 18 08:53:06 2024: Image # 4, module MeasureObjectIntensity # 9: CPU_time = 2.92 secs, Wall_time = 4.54 secs
+Mon Mar 18 08:53:06 2024: Image # 33, module MeasureObjectIntensity # 9: CPU_time = 2.98 secs, Wall_time = 4.51 secs
+Mon Mar 18 08:53:06 2024: Image # 16, module MeasureObjectIntensity # 9: CPU_time = 2.79 secs, Wall_time = 4.56 secs
+Mon Mar 18 08:53:06 2024: Image # 8, module MeasureObjectIntensity # 9: CPU_time = 2.75 secs, Wall_time = 4.86 secs
+Mon Mar 18 08:53:06 2024: Image # 24, module MeasureObjectIntensity # 9: CPU_time = 3.04 secs, Wall_time = 5.60 secs
+Mon Mar 18 08:53:06 2024: Image # 12, module MeasureObjectIntensity # 9: CPU_time = 2.71 secs, Wall_time = 5.59 secs
+Mon Mar 18 08:53:06 2024: Image # 2, module MeasureObjectIntensity # 9: CPU_time = 2.84 secs, Wall_time = 6.08 secs
+Mon Mar 18 08:53:06 2024: Image # 26, module MeasureObjectIntensity # 9: CPU_time = 3.20 secs, Wall_time = 6.65 secs
+Mon Mar 18 08:53:06 2024: Image # 9, module MeasureObjectIntensity # 9: CPU_time = 3.22 secs, Wall_time = 7.77 secs
+Mon Mar 18 08:53:06 2024: Image # 32, module MeasureObjectIntensity # 9: CPU_time = 3.34 secs, Wall_time = 8.07 secs
+Mon Mar 18 08:53:06 2024: Image # 27, module MeasureObjectIntensity # 9: CPU_time = 3.09 secs, Wall_time = 8.37 secs
+Mon Mar 18 08:53:08 2024: Image # 29, module MeasureObjectIntensity # 9: CPU_time = 5.37 secs, Wall_time = 22.73 secs
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/cellprofiler/modules/measurecolocalization.py:1354: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  costReg, _ = scipy.stats.pearsonr(fi[combt], si[combt])
+Mon Mar 18 08:53:08 2024: Image # 22, module MeasureObjectIntensity # 9: CPU_time = 4.93 secs, Wall_time = 22.76 secs
+Mon Mar 18 08:53:07 2024: Image # 28, module MeasureObjectIntensity # 9: CPU_time = 5.54 secs, Wall_time = 23.97 secs
+/uufs/chpc.utah.edu/sys/installdir/cellprofiler/miniconda3/lib/python3.9/site-packages/cellprofiler/modules/measurecolocalization.py:1354: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  costReg, _ = scipy.stats.pearsonr(fi[combt], si[combt])
+Mon Mar 18 08:53:09 2024: Image # 23, module MeasureObjectIntensity # 9: CPU_time = 5.20 secs, Wall_time = 26.38 secs
+Mon Mar 18 08:53:08 2024: Image # 13, module MeasureColocalization # 10: CPU_time = 193.64 secs, Wall_time = 38.26 secs
+Mon Mar 18 08:53:12 2024: Image # 12, module MeasureColocalization # 10: CPU_time = 164.16 secs, Wall_time = 41.77 secs
+Mon Mar 18 08:53:10 2024: Image # 16, module MeasureColocalization # 10: CPU_time = 176.78 secs, Wall_time = 43.45 secs
+Mon Mar 18 08:53:10 2024: Image # 3, module MeasureColocalization # 10: CPU_time = 187.20 secs, Wall_time = 44.39 secs
+Mon Mar 18 08:53:08 2024: Image # 5, module MeasureColocalization # 10: CPU_time = 220.59 secs, Wall_time = 46.89 secs
+Mon Mar 18 08:53:08 2024: Image # 11, module MeasureColocalization # 10: CPU_time = 230.83 secs, Wall_time = 47.64 secs
+Mon Mar 18 08:53:46 2024: Image # 13, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.52 secs, Wall_time = 10.31 secs
+Mon Mar 18 08:53:10 2024: Image # 31, module MeasureColocalization # 10: CPU_time = 184.40 secs, Wall_time = 47.34 secs
+Mon Mar 18 08:53:57 2024: Image # 13, module MeasureObjectSizeShape # 12: CPU_time = 0.47 secs, Wall_time = 1.54 secs
+Mon Mar 18 08:53:10 2024: Image # 34, module MeasureColocalization # 10: CPU_time = 190.09 secs, Wall_time = 49.80 secs
+Mon Mar 18 08:53:14 2024: Image # 32, module MeasureColocalization # 10: CPU_time = 177.09 secs, Wall_time = 45.51 secs
+Mon Mar 18 08:53:11 2024: Image # 24, module MeasureColocalization # 10: CPU_time = 211.55 secs, Wall_time = 48.46 secs
+Mon Mar 18 08:53:09 2024: Image # 10, module MeasureColocalization # 10: CPU_time = 223.34 secs, Wall_time = 51.06 secs
+Mon Mar 18 08:53:08 2024: Image # 21, module MeasureColocalization # 10: CPU_time = 235.82 secs, Wall_time = 52.87 secs
+Mon Mar 18 08:53:10 2024: Image # 33, module MeasureColocalization # 10: CPU_time = 219.39 secs, Wall_time = 50.54 secs
+Mon Mar 18 08:53:09 2024: Image # 7, module MeasureColocalization # 10: CPU_time = 269.55 secs, Wall_time = 52.68 secs
+Mon Mar 18 08:53:53 2024: Image # 12, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.52 secs, Wall_time = 8.93 secs
+Mon Mar 18 08:53:07 2024: Image # 14, module MeasureColocalization # 10: CPU_time = 280.10 secs, Wall_time = 55.24 secs
+Mon Mar 18 08:53:13 2024: Image # 26, module MeasureColocalization # 10: CPU_time = 227.13 secs, Wall_time = 49.83 secs
+Mon Mar 18 08:53:14 2024: Image # 9, module MeasureColocalization # 10: CPU_time = 207.36 secs, Wall_time = 49.69 secs
+Mon Mar 18 08:54:02 2024: Image # 12, module MeasureObjectSizeShape # 12: CPU_time = 0.41 secs, Wall_time = 1.64 secs
+Mon Mar 18 08:53:56 2024: Image # 11, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.51 secs, Wall_time = 9.44 secs
+Mon Mar 18 08:53:08 2024: Image # 18, module MeasureColocalization # 10: CPU_time = 258.77 secs, Wall_time = 57.32 secs
+Mon Mar 18 08:53:54 2024: Image # 16, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.21 secs, Wall_time = 12.07 secs
+Mon Mar 18 08:53:55 2024: Image # 5, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.04 secs, Wall_time = 11.57 secs
+Mon Mar 18 08:53:09 2024: Image # 20, module MeasureColocalization # 10: CPU_time = 258.00 secs, Wall_time = 58.65 secs
+Mon Mar 18 08:53:09 2024: Image # 1, module MeasureColocalization # 10: CPU_time = 329.80 secs, Wall_time = 58.87 secs
+Mon Mar 18 08:53:09 2024: Image # 15, module MeasureColocalization # 10: CPU_time = 302.52 secs, Wall_time = 58.17 secs
+Mon Mar 18 08:54:05 2024: Image # 11, module MeasureObjectSizeShape # 12: CPU_time = 0.56 secs, Wall_time = 2.63 secs
+Mon Mar 18 08:53:10 2024: Image # 4, module MeasureColocalization # 10: CPU_time = 314.70 secs, Wall_time = 57.35 secs
+Mon Mar 18 08:53:07 2024: Image # 6, module MeasureColocalization # 10: CPU_time = 296.59 secs, Wall_time = 60.66 secs
+Mon Mar 18 08:53:57 2024: Image # 31, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.09 secs, Wall_time = 10.69 secs
+Mon Mar 18 08:53:09 2024: Image # 19, module MeasureColocalization # 10: CPU_time = 292.02 secs, Wall_time = 59.01 secs
+Mon Mar 18 08:53:54 2024: Image # 3, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.03 secs, Wall_time = 13.94 secs
+Mon Mar 18 08:54:06 2024: Image # 5, module MeasureObjectSizeShape # 12: CPU_time = 0.47 secs, Wall_time = 1.96 secs
+Mon Mar 18 08:54:00 2024: Image # 10, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.57 secs, Wall_time = 8.17 secs
+Mon Mar 18 08:53:08 2024: Image # 17, module MeasureColocalization # 10: CPU_time = 287.54 secs, Wall_time = 60.26 secs
+Mon Mar 18 08:54:01 2024: Image # 21, module MeasureObjectIntensityDistribution # 11: CPU_time = 1.96 secs, Wall_time = 8.06 secs
+Mon Mar 18 08:54:08 2024: Image # 3, module MeasureObjectSizeShape # 12: CPU_time = 0.41 secs, Wall_time = 1.14 secs
+Mon Mar 18 08:54:08 2024: Image # 10, module MeasureObjectSizeShape # 12: CPU_time = 0.60 secs, Wall_time = 1.16 secs
+Mon Mar 18 08:54:01 2024: Image # 7, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.65 secs, Wall_time = 8.09 secs
+Mon Mar 18 08:54:06 2024: Image # 16, module MeasureObjectSizeShape # 12: CPU_time = 1.17 secs, Wall_time = 3.67 secs
+Mon Mar 18 08:54:09 2024: Image # 21, module MeasureObjectSizeShape # 12: CPU_time = 0.29 secs, Wall_time = 0.97 secs
+Mon Mar 18 08:53:31 2024: Image # 29, module MeasureColocalization # 10: CPU_time = 150.40 secs, Wall_time = 38.87 secs
+Mon Mar 18 08:54:00 2024: Image # 34, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.56 secs, Wall_time = 10.32 secs
+Mon Mar 18 08:54:00 2024: Image # 24, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.22 secs, Wall_time = 10.05 secs
+Mon Mar 18 08:54:08 2024: Image # 31, module MeasureObjectSizeShape # 12: CPU_time = 0.78 secs, Wall_time = 2.11 secs
+Mon Mar 18 08:54:00 2024: Image # 32, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.27 secs, Wall_time = 10.89 secs
+Mon Mar 18 08:54:03 2024: Image # 26, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.85 secs, Wall_time = 7.98 secs
+Mon Mar 18 08:54:02 2024: Image # 14, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.94 secs, Wall_time = 8.24 secs
+Mon Mar 18 08:54:10 2024: Image # 34, module MeasureObjectSizeShape # 12: CPU_time = 0.51 secs, Wall_time = 0.91 secs
+Mon Mar 18 08:54:05 2024: Image # 18, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.61 secs, Wall_time = 5.81 secs
+Mon Mar 18 08:54:03 2024: Image # 9, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.78 secs, Wall_time = 7.72 secs
+Mon Mar 18 08:54:01 2024: Image # 33, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.18 secs, Wall_time = 10.13 secs
+Mon Mar 18 08:53:08 2024: Image # 25, module MeasureColocalization # 10: CPU_time = 310.13 secs, Wall_time = 62.97 secs
+Mon Mar 18 08:54:11 2024: Image # 14, module MeasureObjectSizeShape # 12: CPU_time = 0.30 secs, Wall_time = 0.64 secs
+Mon Mar 18 08:54:10 2024: Image # 7, module MeasureObjectSizeShape # 12: CPU_time = 0.75 secs, Wall_time = 2.09 secs
+Mon Mar 18 08:54:10 2024: Image # 24, module MeasureObjectSizeShape # 12: CPU_time = 0.85 secs, Wall_time = 1.91 secs
+Mon Mar 18 08:53:10 2024: Image # 30, module MeasureColocalization # 10: CPU_time = 321.16 secs, Wall_time = 61.83 secs
+Mon Mar 18 08:54:08 2024: Image # 17, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.03 secs, Wall_time = 4.38 secs
+Mon Mar 18 08:54:08 2024: Image # 4, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.17 secs, Wall_time = 5.05 secs
+Mon Mar 18 08:54:08 2024: Image # 6, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.79 secs, Wall_time = 5.16 secs
+Mon Mar 18 08:53:12 2024: Image # 2, module MeasureColocalization # 10: CPU_time = 319.47 secs, Wall_time = 60.90 secs
+Mon Mar 18 08:54:11 2024: Image # 18, module MeasureObjectSizeShape # 12: CPU_time = 0.70 secs, Wall_time = 2.06 secs
+Mon Mar 18 08:54:11 2024: Image # 9, module MeasureObjectSizeShape # 12: CPU_time = 0.73 secs, Wall_time = 2.01 secs
+Mon Mar 18 08:54:11 2024: Image # 33, module MeasureObjectSizeShape # 12: CPU_time = 0.71 secs, Wall_time = 2.00 secs
+Mon Mar 18 08:54:13 2024: Image # 17, module MeasureObjectSizeShape # 12: CPU_time = 0.26 secs, Wall_time = 0.60 secs
+Mon Mar 18 08:54:13 2024: Image # 4, module MeasureObjectSizeShape # 12: CPU_time = 0.52 secs, Wall_time = 0.90 secs
+Mon Mar 18 08:54:11 2024: Image # 32, module MeasureObjectSizeShape # 12: CPU_time = 1.12 secs, Wall_time = 3.22 secs
+Mon Mar 18 08:54:07 2024: Image # 1, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.25 secs, Wall_time = 6.33 secs
+Mon Mar 18 08:54:07 2024: Image # 20, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.70 secs, Wall_time = 6.41 secs
+Mon Mar 18 08:54:13 2024: Image # 6, module MeasureObjectSizeShape # 12: CPU_time = 0.49 secs, Wall_time = 0.96 secs
+Mon Mar 18 08:54:11 2024: Image # 26, module MeasureObjectSizeShape # 12: CPU_time = 1.62 secs, Wall_time = 3.93 secs
+Mon Mar 18 08:54:08 2024: Image # 15, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.11 secs, Wall_time = 7.24 secs
+Mon Mar 18 08:54:08 2024: Image # 19, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.19 secs, Wall_time = 7.01 secs
+Mon Mar 18 08:54:14 2024: Image # 1, module MeasureObjectSizeShape # 12: CPU_time = 0.57 secs, Wall_time = 1.17 secs
+Mon Mar 18 08:54:14 2024: Image # 20, module MeasureObjectSizeShape # 12: CPU_time = 0.77 secs, Wall_time = 1.54 secs
+Mon Mar 18 08:54:15 2024: Image # 15, module MeasureObjectSizeShape # 12: CPU_time = 0.59 secs, Wall_time = 0.92 secs
+Mon Mar 18 08:54:15 2024: Image # 19, module MeasureObjectSizeShape # 12: CPU_time = 0.63 secs, Wall_time = 1.11 secs
+Mon Mar 18 08:54:13 2024: Image # 2, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.48 secs, Wall_time = 3.95 secs
+Mon Mar 18 08:53:31 2024: Image # 28, module MeasureColocalization # 10: CPU_time = 278.78 secs, Wall_time = 45.69 secs
+Mon Mar 18 08:54:12 2024: Image # 30, module MeasureObjectIntensityDistribution # 11: CPU_time = 2.56 secs, Wall_time = 5.10 secs
+Mon Mar 18 08:54:11 2024: Image # 25, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.08 secs, Wall_time = 5.91 secs
+Mon Mar 18 08:53:11 2024: Image # 8, module MeasureColocalization # 10: CPU_time = 391.18 secs, Wall_time = 66.30 secs
+Mon Mar 18 08:54:17 2024: Image # 2, module MeasureObjectSizeShape # 12: CPU_time = 0.46 secs, Wall_time = 0.86 secs
+Mon Mar 18 08:53:14 2024: Image # 27, module MeasureColocalization # 10: CPU_time = 427.07 secs, Wall_time = 63.50 secs
+Mon Mar 18 08:54:17 2024: Image # 25, module MeasureObjectSizeShape # 12: CPU_time = 0.45 secs, Wall_time = 0.66 secs
+Mon Mar 18 08:54:17 2024: Image # 30, module MeasureObjectSizeShape # 12: CPU_time = 0.44 secs, Wall_time = 0.72 secs
+Mon Mar 18 08:54:10 2024: Image # 29, module MeasureObjectIntensityDistribution # 11: CPU_time = 4.63 secs, Wall_time = 8.66 secs
+Mon Mar 18 08:54:18 2024: Image # 29, module MeasureObjectSizeShape # 12: CPU_time = 1.48 secs, Wall_time = 1.67 secs
+Mon Mar 18 08:54:18 2024: Image # 27, module MeasureObjectIntensityDistribution # 11: CPU_time = 4.89 secs, Wall_time = 3.18 secs
+Mon Mar 18 08:54:17 2024: Image # 8, module MeasureObjectIntensityDistribution # 11: CPU_time = 7.86 secs, Wall_time = 3.79 secs
+Mon Mar 18 08:54:17 2024: Image # 28, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.95 secs, Wall_time = 4.97 secs
+Mon Mar 18 08:54:21 2024: Image # 8, module MeasureObjectSizeShape # 12: CPU_time = 1.13 secs, Wall_time = 1.37 secs
+Mon Mar 18 08:54:21 2024: Image # 27, module MeasureObjectSizeShape # 12: CPU_time = 1.54 secs, Wall_time = 1.81 secs
+Mon Mar 18 08:54:22 2024: Image # 28, module MeasureObjectSizeShape # 12: CPU_time = 1.05 secs, Wall_time = 1.37 secs
+Mon Mar 18 08:53:31 2024: Image # 22, module MeasureColocalization # 10: CPU_time = 785.06 secs, Wall_time = 57.72 secs
+Mon Mar 18 08:53:35 2024: Image # 23, module MeasureColocalization # 10: CPU_time = 830.00 secs, Wall_time = 54.13 secs
+Mon Mar 18 08:54:29 2024: Image # 22, module MeasureObjectIntensityDistribution # 11: CPU_time = 3.43 secs, Wall_time = 2.76 secs
+Mon Mar 18 08:54:31 2024: Image # 22, module MeasureObjectSizeShape # 12: CPU_time = 0.68 secs, Wall_time = 0.68 secs
+Mon Mar 18 08:54:29 2024: Image # 23, module MeasureObjectIntensityDistribution # 11: CPU_time = 7.37 secs, Wall_time = 2.59 secs
+Mon Mar 18 08:54:32 2024: Image # 23, module MeasureObjectSizeShape # 12: CPU_time = 0.91 secs, Wall_time = 0.91 secs
+Mon Mar 18 08:53:58 2024: Image # 13, module ClassifyObjects # 13: CPU_time = 30.57 secs, Wall_time = 42.86 secs
+Mon Mar 18 08:54:04 2024: Image # 12, module ClassifyObjects # 13: CPU_time = 29.55 secs, Wall_time = 37.13 secs
+Mon Mar 18 08:54:41 2024: Image # 13, module FilterObjects # 14: CPU_time = 0.59 secs, Wall_time = 0.59 secs
+Mon Mar 18 08:54:41 2024: Image # 12, module FilterObjects # 14: CPU_time = 0.61 secs, Wall_time = 0.61 secs
+Mon Mar 18 08:54:09 2024: Image # 10, module ClassifyObjects # 13: CPU_time = 32.81 secs, Wall_time = 32.44 secs
+Mon Mar 18 08:54:42 2024: Image # 13, module MaskObjects # 15: CPU_time = 0.26 secs, Wall_time = 0.26 secs
+Mon Mar 18 08:54:08 2024: Image # 11, module ClassifyObjects # 13: CPU_time = 32.65 secs, Wall_time = 34.33 secs
+Mon Mar 18 08:54:42 2024: Image # 12, module MaskObjects # 15: CPU_time = 0.24 secs, Wall_time = 0.25 secs
+Mon Mar 18 08:54:42 2024: Image # 13, module FilterObjects # 16: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:42 2024: Image # 10, module FilterObjects # 14: CPU_time = 0.57 secs, Wall_time = 0.57 secs
+Mon Mar 18 08:54:42 2024: Image # 13, module MaskObjects # 17: CPU_time = 0.18 secs, Wall_time = 0.18 secs
+Mon Mar 18 08:54:42 2024: Image # 12, module FilterObjects # 16: CPU_time = 0.40 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:54:10 2024: Image # 31, module ClassifyObjects # 13: CPU_time = 34.26 secs, Wall_time = 32.58 secs
+Mon Mar 18 08:54:42 2024: Image # 11, module FilterObjects # 14: CPU_time = 0.58 secs, Wall_time = 0.59 secs
+Mon Mar 18 08:54:42 2024: Image # 12, module MaskObjects # 17: CPU_time = 0.15 secs, Wall_time = 0.16 secs
+Mon Mar 18 08:54:42 2024: Image # 10, module MaskObjects # 15: CPU_time = 0.24 secs, Wall_time = 0.24 secs
+Mon Mar 18 08:54:43 2024: Image # 11, module MaskObjects # 15: CPU_time = 0.16 secs, Wall_time = 0.15 secs
+Mon Mar 18 08:54:42 2024: Image # 13, module FilterObjects # 18: CPU_time = 0.36 secs, Wall_time = 0.35 secs
+Mon Mar 18 08:54:43 2024: Image # 12, module FilterObjects # 18: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:43 2024: Image # 10, module FilterObjects # 16: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:43 2024: Image # 11, module FilterObjects # 16: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:43 2024: Image # 31, module FilterObjects # 14: CPU_time = 0.56 secs, Wall_time = 0.56 secs
+Mon Mar 18 08:54:10 2024: Image # 21, module ClassifyObjects # 13: CPU_time = 28.67 secs, Wall_time = 33.54 secs
+Mon Mar 18 08:54:43 2024: Image # 11, module MaskObjects # 17: CPU_time = 0.17 secs, Wall_time = 0.18 secs
+Mon Mar 18 08:54:43 2024: Image # 10, module MaskObjects # 17: CPU_time = 0.30 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:54:08 2024: Image # 5, module ClassifyObjects # 13: CPU_time = 29.66 secs, Wall_time = 35.07 secs
+Mon Mar 18 08:54:43 2024: Image # 31, module MaskObjects # 15: CPU_time = 0.28 secs, Wall_time = 0.28 secs
+Mon Mar 18 08:54:43 2024: Image # 13, module CombineObjects # 19: CPU_time = 0.60 secs, Wall_time = 0.60 secs
+Mon Mar 18 08:54:12 2024: Image # 24, module ClassifyObjects # 13: CPU_time = 33.80 secs, Wall_time = 31.67 secs
+Mon Mar 18 08:54:43 2024: Image # 12, module CombineObjects # 19: CPU_time = 0.59 secs, Wall_time = 0.59 secs
+Mon Mar 18 08:54:09 2024: Image # 3, module ClassifyObjects # 13: CPU_time = 29.03 secs, Wall_time = 34.33 secs
+Mon Mar 18 08:54:43 2024: Image # 11, module FilterObjects # 18: CPU_time = 0.42 secs, Wall_time = 0.42 secs
+Mon Mar 18 08:54:11 2024: Image # 14, module ClassifyObjects # 13: CPU_time = 28.54 secs, Wall_time = 32.37 secs
+Mon Mar 18 08:54:43 2024: Image # 10, module FilterObjects # 18: CPU_time = 0.44 secs, Wall_time = 0.46 secs
+Mon Mar 18 08:54:43 2024: Image # 31, module FilterObjects # 16: CPU_time = 0.44 secs, Wall_time = 0.45 secs
+Mon Mar 18 08:54:11 2024: Image # 34, module ClassifyObjects # 13: CPU_time = 28.95 secs, Wall_time = 33.01 secs
+Mon Mar 18 08:54:12 2024: Image # 7, module ClassifyObjects # 13: CPU_time = 34.48 secs, Wall_time = 32.23 secs
+Mon Mar 18 08:54:43 2024: Image # 21, module FilterObjects # 14: CPU_time = 0.67 secs, Wall_time = 0.69 secs
+Mon Mar 18 08:54:43 2024: Image # 5, module FilterObjects # 14: CPU_time = 0.66 secs, Wall_time = 0.67 secs
+Mon Mar 18 08:54:44 2024: Image # 21, module MaskObjects # 15: CPU_time = 0.13 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:44 2024: Image # 5, module MaskObjects # 15: CPU_time = 0.12 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:14 2024: Image # 32, module ClassifyObjects # 13: CPU_time = 35.38 secs, Wall_time = 30.36 secs
+Mon Mar 18 08:54:10 2024: Image # 16, module ClassifyObjects # 13: CPU_time = 39.82 secs, Wall_time = 34.43 secs
+Mon Mar 18 08:54:44 2024: Image # 31, module MaskObjects # 17: CPU_time = 0.27 secs, Wall_time = 0.32 secs
+Mon Mar 18 08:54:44 2024: Image # 24, module FilterObjects # 14: CPU_time = 0.69 secs, Wall_time = 0.69 secs
+Mon Mar 18 08:54:43 2024: Image # 13, module MeasureObjectNeighbors # 20: CPU_time = 0.94 secs, Wall_time = 0.93 secs
+Mon Mar 18 08:54:44 2024: Image # 11, module CombineObjects # 19: CPU_time = 0.63 secs, Wall_time = 0.63 secs
+Mon Mar 18 08:54:44 2024: Image # 13, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:44 2024: Image # 3, module FilterObjects # 14: CPU_time = 0.73 secs, Wall_time = 0.75 secs
+Mon Mar 18 08:54:44 2024: Image # 14, module FilterObjects # 14: CPU_time = 0.66 secs, Wall_time = 0.67 secs
+Mon Mar 18 08:54:44 2024: Image # 21, module FilterObjects # 16: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:54:44 2024: Image # 24, module MaskObjects # 15: CPU_time = 0.18 secs, Wall_time = 0.18 secs
+Mon Mar 18 08:54:44 2024: Image # 34, module FilterObjects # 14: CPU_time = 0.61 secs, Wall_time = 0.61 secs
+Mon Mar 18 08:54:44 2024: Image # 10, module CombineObjects # 19: CPU_time = 0.63 secs, Wall_time = 0.73 secs
+Mon Mar 18 08:54:16 2024: Image # 15, module ClassifyObjects # 13: CPU_time = 30.35 secs, Wall_time = 28.75 secs
+Mon Mar 18 08:54:44 2024: Image # 7, module FilterObjects # 14: CPU_time = 0.61 secs, Wall_time = 0.61 secs
+Mon Mar 18 08:54:44 2024: Image # 12, module MeasureObjectNeighbors # 20: CPU_time = 0.93 secs, Wall_time = 0.93 secs
+Mon Mar 18 08:54:44 2024: Image # 12, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:13 2024: Image # 9, module ClassifyObjects # 13: CPU_time = 32.55 secs, Wall_time = 31.48 secs
+Mon Mar 18 08:54:44 2024: Image # 5, module FilterObjects # 16: CPU_time = 0.42 secs, Wall_time = 0.44 secs
+Mon Mar 18 08:54:44 2024: Image # 14, module MaskObjects # 15: CPU_time = 0.14 secs, Wall_time = 0.14 secs
+Mon Mar 18 08:54:44 2024: Image # 3, module MaskObjects # 15: CPU_time = 0.19 secs, Wall_time = 0.17 secs
+Mon Mar 18 08:54:14 2024: Image # 4, module ClassifyObjects # 13: CPU_time = 28.57 secs, Wall_time = 30.93 secs
+Mon Mar 18 08:54:44 2024: Image # 21, module MaskObjects # 17: CPU_time = 0.15 secs, Wall_time = 0.15 secs
+Mon Mar 18 08:54:44 2024: Image # 34, module MaskObjects # 15: CPU_time = 0.12 secs, Wall_time = 0.13 secs
+Mon Mar 18 08:54:44 2024: Image # 31, module FilterObjects # 18: CPU_time = 0.45 secs, Wall_time = 0.46 secs
+Mon Mar 18 08:54:13 2024: Image # 18, module ClassifyObjects # 13: CPU_time = 32.03 secs, Wall_time = 31.66 secs
+Mon Mar 18 08:54:44 2024: Image # 7, module MaskObjects # 15: CPU_time = 0.18 secs, Wall_time = 0.20 secs
+Mon Mar 18 08:54:45 2024: Image # 5, module MaskObjects # 17: CPU_time = 0.18 secs, Wall_time = 0.19 secs
+Mon Mar 18 08:54:13 2024: Image # 17, module ClassifyObjects # 13: CPU_time = 28.54 secs, Wall_time = 31.45 secs
+Mon Mar 18 08:54:44 2024: Image # 32, module FilterObjects # 14: CPU_time = 0.72 secs, Wall_time = 0.74 secs
+Mon Mar 18 08:54:44 2024: Image # 24, module FilterObjects # 16: CPU_time = 0.46 secs, Wall_time = 0.44 secs
+Mon Mar 18 08:54:16 2024: Image # 19, module ClassifyObjects # 13: CPU_time = 31.86 secs, Wall_time = 28.86 secs
+Mon Mar 18 08:54:44 2024: Image # 16, module FilterObjects # 14: CPU_time = 0.65 secs, Wall_time = 0.76 secs
+Mon Mar 18 08:54:45 2024: Image # 14, module FilterObjects # 16: CPU_time = 0.42 secs, Wall_time = 0.44 secs
+Mon Mar 18 08:54:45 2024: Image # 3, module FilterObjects # 16: CPU_time = 0.44 secs, Wall_time = 0.44 secs
+Mon Mar 18 08:54:45 2024: Image # 24, module MaskObjects # 17: CPU_time = 0.12 secs, Wall_time = 0.13 secs
+Mon Mar 18 08:54:45 2024: Image # 21, module FilterObjects # 18: CPU_time = 0.44 secs, Wall_time = 0.45 secs
+Mon Mar 18 08:54:45 2024: Image # 34, module FilterObjects # 16: CPU_time = 0.43 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:14 2024: Image # 6, module ClassifyObjects # 13: CPU_time = 28.84 secs, Wall_time = 31.17 secs
+Mon Mar 18 08:54:45 2024: Image # 7, module FilterObjects # 16: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:54:45 2024: Image # 16, module MaskObjects # 15: CPU_time = 0.14 secs, Wall_time = 0.16 secs
+Mon Mar 18 08:54:13 2024: Image # 33, module ClassifyObjects # 13: CPU_time = 32.44 secs, Wall_time = 31.98 secs
+Mon Mar 18 08:54:45 2024: Image # 14, module MaskObjects # 17: CPU_time = 0.12 secs, Wall_time = 0.13 secs
+Mon Mar 18 08:54:45 2024: Image # 5, module FilterObjects # 18: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:54:45 2024: Image # 3, module MaskObjects # 17: CPU_time = 0.13 secs, Wall_time = 0.14 secs
+Mon Mar 18 08:54:45 2024: Image # 32, module MaskObjects # 15: CPU_time = 0.28 secs, Wall_time = 0.27 secs
+Mon Mar 18 08:54:45 2024: Image # 34, module MaskObjects # 17: CPU_time = 0.12 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:44 2024: Image # 15, module FilterObjects # 14: CPU_time = 0.67 secs, Wall_time = 0.68 secs
+Mon Mar 18 08:54:15 2024: Image # 26, module ClassifyObjects # 13: CPU_time = 40.99 secs, Wall_time = 30.53 secs
+Mon Mar 18 08:54:45 2024: Image # 7, module MaskObjects # 17: CPU_time = 0.12 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:45 2024: Image # 9, module FilterObjects # 14: CPU_time = 0.69 secs, Wall_time = 0.69 secs
+Mon Mar 18 08:54:45 2024: Image # 4, module FilterObjects # 14: CPU_time = 0.67 secs, Wall_time = 0.67 secs
+Mon Mar 18 08:54:44 2024: Image # 11, module MeasureObjectNeighbors # 20: CPU_time = 0.84 secs, Wall_time = 0.92 secs
+Mon Mar 18 08:54:45 2024: Image # 11, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:45 2024: Image # 18, module FilterObjects # 14: CPU_time = 0.61 secs, Wall_time = 0.61 secs
+Mon Mar 18 08:54:45 2024: Image # 31, module CombineObjects # 19: CPU_time = 0.69 secs, Wall_time = 0.68 secs
+Mon Mar 18 08:54:45 2024: Image # 15, module MaskObjects # 15: CPU_time = 0.16 secs, Wall_time = 0.16 secs
+Mon Mar 18 08:54:44 2024: Image # 10, module MeasureObjectNeighbors # 20: CPU_time = 0.86 secs, Wall_time = 0.85 secs
+Mon Mar 18 08:54:45 2024: Image # 10, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:45 2024: Image # 17, module FilterObjects # 14: CPU_time = 0.62 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:45 2024: Image # 24, module FilterObjects # 18: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:45 2024: Image # 4, module MaskObjects # 15: CPU_time = 0.17 secs, Wall_time = 0.18 secs
+Mon Mar 18 08:54:45 2024: Image # 16, module FilterObjects # 16: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:18 2024: Image # 25, module ClassifyObjects # 13: CPU_time = 27.42 secs, Wall_time = 27.58 secs
+Mon Mar 18 08:54:45 2024: Image # 19, module FilterObjects # 14: CPU_time = 0.59 secs, Wall_time = 0.58 secs
+Mon Mar 18 08:54:45 2024: Image # 9, module MaskObjects # 15: CPU_time = 0.28 secs, Wall_time = 0.27 secs
+Mon Mar 18 08:54:45 2024: Image # 14, module FilterObjects # 18: CPU_time = 0.40 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:54:45 2024: Image # 34, module FilterObjects # 18: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:45 2024: Image # 3, module FilterObjects # 18: CPU_time = 0.41 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:54:45 2024: Image # 32, module FilterObjects # 16: CPU_time = 0.40 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:54:45 2024: Image # 17, module MaskObjects # 15: CPU_time = 0.18 secs, Wall_time = 0.18 secs
+Mon Mar 18 08:54:45 2024: Image # 18, module MaskObjects # 15: CPU_time = 0.28 secs, Wall_time = 0.28 secs
+Mon Mar 18 08:54:45 2024: Image # 7, module FilterObjects # 18: CPU_time = 0.39 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:45 2024: Image # 21, module CombineObjects # 19: CPU_time = 0.57 secs, Wall_time = 0.57 secs
+Mon Mar 18 08:54:45 2024: Image # 19, module MaskObjects # 15: CPU_time = 0.14 secs, Wall_time = 0.14 secs
+Mon Mar 18 08:54:45 2024: Image # 6, module FilterObjects # 14: CPU_time = 0.64 secs, Wall_time = 0.64 secs
+Mon Mar 18 08:54:45 2024: Image # 5, module CombineObjects # 19: CPU_time = 0.59 secs, Wall_time = 0.59 secs
+Mon Mar 18 08:54:45 2024: Image # 15, module FilterObjects # 16: CPU_time = 0.40 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:54:45 2024: Image # 33, module FilterObjects # 14: CPU_time = 0.61 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:45 2024: Image # 16, module MaskObjects # 17: CPU_time = 0.32 secs, Wall_time = 0.32 secs
+Mon Mar 18 08:54:46 2024: Image # 32, module MaskObjects # 17: CPU_time = 0.27 secs, Wall_time = 0.27 secs
+Mon Mar 18 08:54:45 2024: Image # 26, module FilterObjects # 14: CPU_time = 0.67 secs, Wall_time = 0.69 secs
+Mon Mar 18 08:54:46 2024: Image # 15, module MaskObjects # 17: CPU_time = 0.12 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:46 2024: Image # 6, module MaskObjects # 15: CPU_time = 0.18 secs, Wall_time = 0.18 secs
+Mon Mar 18 08:54:45 2024: Image # 4, module FilterObjects # 16: CPU_time = 0.45 secs, Wall_time = 0.45 secs
+Mon Mar 18 08:54:15 2024: Image # 1, module ClassifyObjects # 13: CPU_time = 31.68 secs, Wall_time = 30.93 secs
+Mon Mar 18 08:54:45 2024: Image # 9, module FilterObjects # 16: CPU_time = 0.38 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:54:15 2024: Image # 20, module ClassifyObjects # 13: CPU_time = 33.57 secs, Wall_time = 30.51 secs
+Mon Mar 18 08:54:46 2024: Image # 18, module FilterObjects # 16: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:54:46 2024: Image # 26, module MaskObjects # 15: CPU_time = 0.12 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:46 2024: Image # 19, module FilterObjects # 16: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:46 2024: Image # 17, module FilterObjects # 16: CPU_time = 0.41 secs, Wall_time = 0.42 secs
+Mon Mar 18 08:54:46 2024: Image # 33, module MaskObjects # 15: CPU_time = 0.26 secs, Wall_time = 0.27 secs
+Mon Mar 18 08:54:46 2024: Image # 9, module MaskObjects # 17: CPU_time = 0.12 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:45 2024: Image # 24, module CombineObjects # 19: CPU_time = 0.69 secs, Wall_time = 0.70 secs
+Mon Mar 18 08:54:45 2024: Image # 14, module CombineObjects # 19: CPU_time = 0.58 secs, Wall_time = 0.57 secs
+Mon Mar 18 08:54:46 2024: Image # 19, module MaskObjects # 17: CPU_time = 0.12 secs, Wall_time = 0.12 secs
+Mon Mar 18 08:54:45 2024: Image # 25, module FilterObjects # 14: CPU_time = 0.62 secs, Wall_time = 0.63 secs
+Mon Mar 18 08:54:46 2024: Image # 4, module MaskObjects # 17: CPU_time = 0.29 secs, Wall_time = 0.30 secs
+Mon Mar 18 08:54:45 2024: Image # 31, module MeasureObjectNeighbors # 20: CPU_time = 0.87 secs, Wall_time = 0.87 secs
+Mon Mar 18 08:54:46 2024: Image # 31, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:46 2024: Image # 16, module FilterObjects # 18: CPU_time = 0.40 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:54:46 2024: Image # 3, module CombineObjects # 19: CPU_time = 0.66 secs, Wall_time = 0.65 secs
+Mon Mar 18 08:54:46 2024: Image # 34, module CombineObjects # 19: CPU_time = 0.65 secs, Wall_time = 0.66 secs
+Mon Mar 18 08:54:46 2024: Image # 7, module CombineObjects # 19: CPU_time = 0.61 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:46 2024: Image # 15, module FilterObjects # 18: CPU_time = 0.37 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:46 2024: Image # 18, module MaskObjects # 17: CPU_time = 0.26 secs, Wall_time = 0.26 secs
+Mon Mar 18 08:54:46 2024: Image # 32, module FilterObjects # 18: CPU_time = 0.41 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:54:46 2024: Image # 6, module FilterObjects # 16: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:46 2024: Image # 17, module MaskObjects # 17: CPU_time = 0.28 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:54:46 2024: Image # 25, module MaskObjects # 15: CPU_time = 0.17 secs, Wall_time = 0.17 secs
+Mon Mar 18 08:54:46 2024: Image # 26, module FilterObjects # 16: CPU_time = 0.39 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:54:46 2024: Image # 6, module MaskObjects # 17: CPU_time = 0.13 secs, Wall_time = 0.13 secs
+Mon Mar 18 08:54:46 2024: Image # 9, module FilterObjects # 18: CPU_time = 0.40 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:54:18 2024: Image # 30, module ClassifyObjects # 13: CPU_time = 28.14 secs, Wall_time = 28.51 secs
+Mon Mar 18 08:54:46 2024: Image # 33, module FilterObjects # 16: CPU_time = 0.42 secs, Wall_time = 0.42 secs
+Mon Mar 18 08:54:46 2024: Image # 19, module FilterObjects # 18: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:46 2024: Image # 5, module MeasureObjectNeighbors # 20: CPU_time = 0.81 secs, Wall_time = 0.81 secs
+Mon Mar 18 08:54:46 2024: Image # 1, module FilterObjects # 14: CPU_time = 0.65 secs, Wall_time = 0.65 secs
+Mon Mar 18 08:54:47 2024: Image # 5, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:46 2024: Image # 20, module FilterObjects # 14: CPU_time = 0.63 secs, Wall_time = 0.63 secs
+Mon Mar 18 08:54:46 2024: Image # 21, module MeasureObjectNeighbors # 20: CPU_time = 0.96 secs, Wall_time = 0.96 secs
+Mon Mar 18 08:54:47 2024: Image # 21, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:46 2024: Image # 18, module FilterObjects # 18: CPU_time = 0.37 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:46 2024: Image # 4, module FilterObjects # 18: CPU_time = 0.44 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:46 2024: Image # 25, module FilterObjects # 16: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:54:46 2024: Image # 26, module MaskObjects # 17: CPU_time = 0.32 secs, Wall_time = 0.32 secs
+Mon Mar 18 08:54:46 2024: Image # 17, module FilterObjects # 18: CPU_time = 0.43 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:46 2024: Image # 33, module MaskObjects # 17: CPU_time = 0.29 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:54:47 2024: Image # 1, module MaskObjects # 15: CPU_time = 0.17 secs, Wall_time = 0.18 secs
+Mon Mar 18 08:54:46 2024: Image # 6, module FilterObjects # 18: CPU_time = 0.42 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:54:46 2024: Image # 15, module CombineObjects # 19: CPU_time = 0.57 secs, Wall_time = 0.57 secs
+Mon Mar 18 08:54:46 2024: Image # 16, module CombineObjects # 19: CPU_time = 0.64 secs, Wall_time = 0.63 secs
+Mon Mar 18 08:54:47 2024: Image # 20, module MaskObjects # 15: CPU_time = 0.27 secs, Wall_time = 0.27 secs
+Mon Mar 18 08:54:46 2024: Image # 32, module CombineObjects # 19: CPU_time = 0.59 secs, Wall_time = 0.60 secs
+Mon Mar 18 08:54:46 2024: Image # 24, module MeasureObjectNeighbors # 20: CPU_time = 0.80 secs, Wall_time = 0.78 secs
+Mon Mar 18 08:54:47 2024: Image # 24, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 25, module MaskObjects # 17: CPU_time = 0.25 secs, Wall_time = 0.26 secs
+Mon Mar 18 08:54:46 2024: Image # 14, module MeasureObjectNeighbors # 20: CPU_time = 0.85 secs, Wall_time = 0.85 secs
+Mon Mar 18 08:54:47 2024: Image # 14, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:46 2024: Image # 9, module CombineObjects # 19: CPU_time = 0.63 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:46 2024: Image # 30, module FilterObjects # 14: CPU_time = 0.62 secs, Wall_time = 0.64 secs
+Mon Mar 18 08:54:47 2024: Image # 1, module FilterObjects # 16: CPU_time = 0.39 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:46 2024: Image # 19, module CombineObjects # 19: CPU_time = 0.63 secs, Wall_time = 0.64 secs
+Mon Mar 18 08:54:47 2024: Image # 26, module FilterObjects # 18: CPU_time = 0.43 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:18 2024: Image # 2, module ClassifyObjects # 13: CPU_time = 28.25 secs, Wall_time = 29.40 secs
+Mon Mar 18 08:54:46 2024: Image # 34, module MeasureObjectNeighbors # 20: CPU_time = 0.94 secs, Wall_time = 0.95 secs
+Mon Mar 18 08:54:47 2024: Image # 34, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 33, module FilterObjects # 18: CPU_time = 0.44 secs, Wall_time = 0.45 secs
+Mon Mar 18 08:54:46 2024: Image # 7, module MeasureObjectNeighbors # 20: CPU_time = 0.97 secs, Wall_time = 0.97 secs
+Mon Mar 18 08:54:47 2024: Image # 7, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:46 2024: Image # 3, module MeasureObjectNeighbors # 20: CPU_time = 0.99 secs, Wall_time = 0.99 secs
+Mon Mar 18 08:54:47 2024: Image # 3, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 18, module CombineObjects # 19: CPU_time = 0.62 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:47 2024: Image # 1, module MaskObjects # 17: CPU_time = 0.14 secs, Wall_time = 0.14 secs
+Mon Mar 18 08:54:47 2024: Image # 20, module FilterObjects # 16: CPU_time = 0.43 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:47 2024: Image # 4, module CombineObjects # 19: CPU_time = 0.60 secs, Wall_time = 0.66 secs
+Mon Mar 18 08:54:47 2024: Image # 30, module MaskObjects # 15: CPU_time = 0.23 secs, Wall_time = 0.22 secs
+Mon Mar 18 08:54:47 2024: Image # 17, module CombineObjects # 19: CPU_time = 0.60 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:47 2024: Image # 17, module MeasureObjectNeighbors # 20: CPU_time = 0.02 secs, Wall_time = 0.02 secs
+Mon Mar 18 08:54:47 2024: Image # 17, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 25, module FilterObjects # 18: CPU_time = 0.42 secs, Wall_time = 0.41 secs
+Mon Mar 18 08:54:47 2024: Image # 6, module CombineObjects # 19: CPU_time = 0.62 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:47 2024: Image # 20, module MaskObjects # 17: CPU_time = 0.18 secs, Wall_time = 0.20 secs
+Mon Mar 18 08:54:47 2024: Image # 1, module FilterObjects # 18: CPU_time = 0.40 secs, Wall_time = 0.40 secs
+Mon Mar 18 08:54:20 2024: Image # 29, module ClassifyObjects # 13: CPU_time = 38.22 secs, Wall_time = 27.64 secs
+Mon Mar 18 08:54:47 2024: Image # 15, module MeasureObjectNeighbors # 20: CPU_time = 0.87 secs, Wall_time = 0.88 secs
+Mon Mar 18 08:54:48 2024: Image # 15, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 32, module MeasureObjectNeighbors # 20: CPU_time = 0.88 secs, Wall_time = 0.87 secs
+Mon Mar 18 08:54:48 2024: Image # 32, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 30, module FilterObjects # 16: CPU_time = 0.45 secs, Wall_time = 0.45 secs
+Mon Mar 18 08:54:47 2024: Image # 33, module CombineObjects # 19: CPU_time = 0.61 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:47 2024: Image # 26, module CombineObjects # 19: CPU_time = 0.65 secs, Wall_time = 0.65 secs
+Mon Mar 18 08:54:47 2024: Image # 2, module FilterObjects # 14: CPU_time = 0.67 secs, Wall_time = 0.67 secs
+Mon Mar 18 08:54:47 2024: Image # 16, module MeasureObjectNeighbors # 20: CPU_time = 0.99 secs, Wall_time = 0.99 secs
+Mon Mar 18 08:54:48 2024: Image # 16, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 20, module FilterObjects # 18: CPU_time = 0.43 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:47 2024: Image # 25, module CombineObjects # 19: CPU_time = 0.61 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:47 2024: Image # 19, module MeasureObjectNeighbors # 20: CPU_time = 0.84 secs, Wall_time = 0.85 secs
+Mon Mar 18 08:54:48 2024: Image # 19, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:48 2024: Image # 30, module MaskObjects # 17: CPU_time = 0.29 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:54:48 2024: Image # 2, module MaskObjects # 15: CPU_time = 0.22 secs, Wall_time = 0.23 secs
+Mon Mar 18 08:54:47 2024: Image # 18, module MeasureObjectNeighbors # 20: CPU_time = 0.81 secs, Wall_time = 0.82 secs
+Mon Mar 18 08:54:47 2024: Image # 9, module MeasureObjectNeighbors # 20: CPU_time = 1.00 secs, Wall_time = 1.00 secs
+Mon Mar 18 08:54:48 2024: Image # 18, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:48 2024: Image # 9, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:47 2024: Image # 4, module MeasureObjectNeighbors # 20: CPU_time = 0.95 secs, Wall_time = 0.94 secs
+Mon Mar 18 08:54:48 2024: Image # 4, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:48 2024: Image # 1, module CombineObjects # 19: CPU_time = 0.61 secs, Wall_time = 0.61 secs
+Mon Mar 18 08:54:22 2024: Image # 8, module ClassifyObjects # 13: CPU_time = 35.24 secs, Wall_time = 25.81 secs
+Mon Mar 18 08:54:47 2024: Image # 6, module MeasureObjectNeighbors # 20: CPU_time = 0.94 secs, Wall_time = 0.94 secs
+Mon Mar 18 08:54:48 2024: Image # 6, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:48 2024: Image # 30, module FilterObjects # 18: CPU_time = 0.37 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:54:48 2024: Image # 2, module FilterObjects # 16: CPU_time = 0.39 secs, Wall_time = 0.39 secs
+Mon Mar 18 08:54:48 2024: Image # 29, module FilterObjects # 14: CPU_time = 0.81 secs, Wall_time = 0.80 secs
+Mon Mar 18 08:54:48 2024: Image # 20, module CombineObjects # 19: CPU_time = 0.61 secs, Wall_time = 0.62 secs
+Mon Mar 18 08:54:48 2024: Image # 33, module MeasureObjectNeighbors # 20: CPU_time = 0.85 secs, Wall_time = 0.85 secs
+Mon Mar 18 08:54:49 2024: Image # 33, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:48 2024: Image # 26, module MeasureObjectNeighbors # 20: CPU_time = 0.92 secs, Wall_time = 0.92 secs
+Mon Mar 18 08:54:48 2024: Image # 2, module MaskObjects # 17: CPU_time = 0.29 secs, Wall_time = 0.28 secs
+Mon Mar 18 08:54:49 2024: Image # 26, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:48 2024: Image # 8, module FilterObjects # 14: CPU_time = 0.56 secs, Wall_time = 0.57 secs
+Mon Mar 18 08:54:48 2024: Image # 25, module MeasureObjectNeighbors # 20: CPU_time = 0.84 secs, Wall_time = 0.86 secs
+Mon Mar 18 08:54:49 2024: Image # 25, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:48 2024: Image # 29, module MaskObjects # 15: CPU_time = 0.36 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:48 2024: Image # 30, module CombineObjects # 19: CPU_time = 0.58 secs, Wall_time = 0.58 secs
+Mon Mar 18 08:54:48 2024: Image # 1, module MeasureObjectNeighbors # 20: CPU_time = 0.76 secs, Wall_time = 0.76 secs
+Mon Mar 18 08:54:49 2024: Image # 1, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:49 2024: Image # 8, module MaskObjects # 15: CPU_time = 0.24 secs, Wall_time = 0.24 secs
+Mon Mar 18 08:54:49 2024: Image # 2, module FilterObjects # 18: CPU_time = 0.35 secs, Wall_time = 0.36 secs
+Mon Mar 18 08:54:48 2024: Image # 20, module MeasureObjectNeighbors # 20: CPU_time = 0.80 secs, Wall_time = 0.80 secs
+Mon Mar 18 08:54:49 2024: Image # 20, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:49 2024: Image # 29, module FilterObjects # 16: CPU_time = 0.55 secs, Wall_time = 0.56 secs
+Mon Mar 18 08:54:49 2024: Image # 8, module FilterObjects # 16: CPU_time = 0.36 secs, Wall_time = 0.35 secs
+Mon Mar 18 08:54:49 2024: Image # 2, module CombineObjects # 19: CPU_time = 0.53 secs, Wall_time = 0.52 secs
+Mon Mar 18 08:54:50 2024: Image # 2, module MeasureObjectNeighbors # 20: CPU_time = 0.02 secs, Wall_time = 0.02 secs
+Mon Mar 18 08:54:50 2024: Image # 2, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:49 2024: Image # 8, module MaskObjects # 17: CPU_time = 0.24 secs, Wall_time = 0.25 secs
+Mon Mar 18 08:54:49 2024: Image # 30, module MeasureObjectNeighbors # 20: CPU_time = 0.80 secs, Wall_time = 0.80 secs
+Mon Mar 18 08:54:50 2024: Image # 30, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:49 2024: Image # 29, module MaskObjects # 17: CPU_time = 0.38 secs, Wall_time = 0.38 secs
+Mon Mar 18 08:54:23 2024: Image # 28, module ClassifyObjects # 13: CPU_time = 34.58 secs, Wall_time = 26.49 secs
+Mon Mar 18 08:54:23 2024: Image # 27, module ClassifyObjects # 13: CPU_time = 38.63 secs, Wall_time = 27.17 secs
+Mon Mar 18 08:54:50 2024: Image # 8, module FilterObjects # 18: CPU_time = 0.36 secs, Wall_time = 0.37 secs
+Mon Mar 18 08:54:50 2024: Image # 29, module FilterObjects # 18: CPU_time = 0.50 secs, Wall_time = 0.51 secs
+Mon Mar 18 08:54:50 2024: Image # 28, module FilterObjects # 14: CPU_time = 0.69 secs, Wall_time = 0.69 secs
+Mon Mar 18 08:54:50 2024: Image # 27, module FilterObjects # 14: CPU_time = 0.53 secs, Wall_time = 0.53 secs
+Mon Mar 18 08:54:50 2024: Image # 8, module CombineObjects # 19: CPU_time = 0.51 secs, Wall_time = 0.52 secs
+Mon Mar 18 08:54:51 2024: Image # 27, module MaskObjects # 15: CPU_time = 0.12 secs, Wall_time = 0.13 secs
+Mon Mar 18 08:54:50 2024: Image # 28, module MaskObjects # 15: CPU_time = 0.29 secs, Wall_time = 0.29 secs
+Mon Mar 18 08:54:51 2024: Image # 27, module FilterObjects # 16: CPU_time = 0.32 secs, Wall_time = 0.31 secs
+Mon Mar 18 08:54:50 2024: Image # 29, module CombineObjects # 19: CPU_time = 0.79 secs, Wall_time = 0.78 secs
+Mon Mar 18 08:54:51 2024: Image # 28, module FilterObjects # 16: CPU_time = 0.44 secs, Wall_time = 0.45 secs
+Mon Mar 18 08:54:51 2024: Image # 27, module MaskObjects # 17: CPU_time = 0.22 secs, Wall_time = 0.22 secs
+Mon Mar 18 08:54:51 2024: Image # 8, module MeasureObjectNeighbors # 20: CPU_time = 0.71 secs, Wall_time = 0.70 secs
+Mon Mar 18 08:54:51 2024: Image # 8, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:51 2024: Image # 28, module MaskObjects # 17: CPU_time = 0.16 secs, Wall_time = 0.15 secs
+Mon Mar 18 08:54:51 2024: Image # 27, module FilterObjects # 18: CPU_time = 0.32 secs, Wall_time = 0.32 secs
+Mon Mar 18 08:54:51 2024: Image # 28, module FilterObjects # 18: CPU_time = 0.47 secs, Wall_time = 0.47 secs
+Mon Mar 18 08:54:52 2024: Image # 27, module CombineObjects # 19: CPU_time = 0.50 secs, Wall_time = 0.49 secs
+Mon Mar 18 08:54:51 2024: Image # 29, module MeasureObjectNeighbors # 20: CPU_time = 1.21 secs, Wall_time = 1.22 secs
+Mon Mar 18 08:54:52 2024: Image # 29, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:52 2024: Image # 28, module CombineObjects # 19: CPU_time = 0.73 secs, Wall_time = 0.74 secs
+Mon Mar 18 08:54:52 2024: Image # 27, module MeasureObjectNeighbors # 20: CPU_time = 0.66 secs, Wall_time = 0.66 secs
+Mon Mar 18 08:54:53 2024: Image # 27, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:53 2024: Image # 28, module MeasureObjectNeighbors # 20: CPU_time = 1.18 secs, Wall_time = 1.18 secs
+Mon Mar 18 08:54:54 2024: Image # 28, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:32 2024: Image # 22, module ClassifyObjects # 13: CPU_time = 31.62 secs, Wall_time = 23.18 secs
+Mon Mar 18 08:54:55 2024: Image # 22, module FilterObjects # 14: CPU_time = 0.68 secs, Wall_time = 0.67 secs
+Mon Mar 18 08:54:56 2024: Image # 22, module MaskObjects # 15: CPU_time = 0.34 secs, Wall_time = 0.34 secs
+Mon Mar 18 08:54:33 2024: Image # 23, module ClassifyObjects # 13: CPU_time = 35.72 secs, Wall_time = 23.30 secs
+Mon Mar 18 08:54:56 2024: Image # 22, module FilterObjects # 16: CPU_time = 0.42 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:57 2024: Image # 22, module MaskObjects # 17: CPU_time = 0.14 secs, Wall_time = 0.14 secs
+Mon Mar 18 08:54:56 2024: Image # 23, module FilterObjects # 14: CPU_time = 0.62 secs, Wall_time = 0.61 secs
+Mon Mar 18 08:54:57 2024: Image # 23, module MaskObjects # 15: CPU_time = 0.31 secs, Wall_time = 0.30 secs
+Mon Mar 18 08:54:57 2024: Image # 22, module FilterObjects # 18: CPU_time = 0.44 secs, Wall_time = 0.44 secs
+Mon Mar 18 08:54:57 2024: Image # 23, module FilterObjects # 16: CPU_time = 0.43 secs, Wall_time = 0.43 secs
+Mon Mar 18 08:54:58 2024: Image # 23, module MaskObjects # 17: CPU_time = 0.30 secs, Wall_time = 0.31 secs
+Mon Mar 18 08:54:57 2024: Image # 22, module CombineObjects # 19: CPU_time = 0.70 secs, Wall_time = 0.71 secs
+Mon Mar 18 08:54:58 2024: Image # 23, module FilterObjects # 18: CPU_time = 0.43 secs, Wall_time = 0.42 secs
+Mon Mar 18 08:54:58 2024: Image # 23, module CombineObjects # 19: CPU_time = 0.69 secs, Wall_time = 0.69 secs
+Mon Mar 18 08:54:58 2024: Image # 22, module MeasureObjectNeighbors # 20: CPU_time = 1.12 secs, Wall_time = 1.12 secs
+Mon Mar 18 08:54:59 2024: Image # 22, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Mon Mar 18 08:54:59 2024: Image # 23, module MeasureObjectNeighbors # 20: CPU_time = 1.14 secs, Wall_time = 1.13 secs
+Mon Mar 18 08:55:00 2024: Image # 23, module ExportToSpreadsheet # 21: CPU_time = 0.00 secs, Wall_time = 0.00 secs
+Finished CellProfiler
+Finished Analysis

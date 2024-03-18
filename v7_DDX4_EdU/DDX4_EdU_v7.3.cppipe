@@ -204,7 +204,7 @@ ClassifyObjects:[module_num:13|svn_version:'Unknown'|variable_revision_number:4|
     Retain an image of the classified objects?:No
     Enter the image name:None
     Save classes as new object sets?:Yes
-    Select the location of the classifier model file:Elsewhere...|/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/ZachO/v7_DDX4_EdU
+    Select the location of the classifier model file:Elsewhere...|/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU
     Rules or classifier file name:cytoDDX4_test_and_13_model_v7.model
     Allow fuzzy feature matching?:Yes
 
@@ -214,7 +214,7 @@ FilterObjects:[module_num:14|svn_version:'Unknown'|variable_revision_number:10|s
     Select the filtering mode:Rules
     Select the filtering method:Limits
     Select the objects that contain the filtered objects:None
-    Select the location of the rules or classifier file:Elsewhere...|/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/ZachO/v7_DDX4_EdU
+    Select the location of the rules or classifier file:Elsewhere...|/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU
     Rules or classifier file name:rules.txt
     Class number:1
     Measurement count:1

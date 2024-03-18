@@ -89,4 +89,7 @@ For example:
 scp /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/user/SLURM/output/2024-03-15_09-49-57_DDX4_EdU_all_images.csv /Users/user/Desktop
 ```
 
-The results can then be used in for downstream processing or visualization. 
+The results can then be used in for downstream processing or visualization.
+DDX4_EdU_v7_quantification_slurm.R can be used to quantify colonies, split the data up by plate, and get per well counts.  
+
+

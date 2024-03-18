@@ -5,19 +5,21 @@
 #SBATCH --ntasks=64
 #SBATCH --mem 256G
 #SBATCH --time=04:00:00
-#SBATCH --mail-user=user@paternabio.com
+#SBATCH --mail-user=zach.olsen@paternabio.com
 #SBATCH --mail-type=ALL
 
 CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v7.3.cppipe
-INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/Images/test_stardist
-OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/SLURM/output/test_stardist
+INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/test_stardist
+OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/test_stardist
 NTASKS=64
 
 module load deeplearning/2022.1
 
-python /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/stardist/stardist_v2.py "$INIMG"
+python /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/python/stardist_v2.py "$INIMG"
 
 module unload deeplearning/2022.1
+
+echo "Finished Segmentation"
 
 module load cellprofiler
 
@@ -53,8 +55,10 @@ wait
 
 module unload cellprofiler
 
+echo "Finished CellProfiler"
+
 module load R
 
 Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/combine_csv.R --args "$OUTXL"
 
-echo "all done"
+echo "Finished Analysis"
