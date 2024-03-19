@@ -1,6 +1,4 @@
 #Load packages
-packages <- c("xlsx")
-install.packages(setdiff(packages, rownames(installed.packages()))) 
 library(xlsx)
 
 #Choose path to database file

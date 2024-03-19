@@ -1,7 +1,7 @@
 ### This repository is for the basics of running our image analysis pipeline on the University of Utah's CHPC.
 
 In order to use PaternaBio's allocation on the Redwood cluster, you will need to get an account with CHPC, complete their protected enivronment(PE) application, ask for access to proj_paternabio (redwood cluster), and ask for access to submit batches to paternabio-rw.
-More details for setting up your CHPC account can be found on their website.
+More details for setting up your CHPC account can be found on their website. ([CHPC Documentation](https://www.chpc.utah.edu/documentation/gettingstarted.php))
 
 # Setup
 
@@ -37,9 +37,16 @@ nano DDX4_EdU_batch.sh
 
 Set "#SBATCH --mail-user=" to your email. You will receive emails when jobs start and finish.
 
-Set "INIMG=" to the location of the images you are analyzing.
+Set "INIMG=" to the location of the images you are analyzing. This pipeline assumes only files that need to be analyzed are in that folder. Remove any files in the folder that are not meant to be analyzed before running the script. Most often the issue comes from jpg and scanprotocol files. You can remove them using:
+```
+cd /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/<your folder>
+rm *.jpg
+rm *.scanprotocol
+```
 
 Set "OUTXL=" to the location for your output. This should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if it does not yet exist.
+
+The default number of tasks is 64. This is the number of cores available on our node and the number of tasks we can run at a time. If you are going to use less than 64, set the NTASK variable to the new task allotment. This prevents your analysis from getting split up into more tasks than are available. If you start more tasks than are available, the pipeline will slow down significantly.
 
 Press ctrl+X to leave the file. Save it with a unique file name to create a record of analyses that have been run and prevent making unintended changes to the base file.
 
@@ -53,7 +60,7 @@ Run your analysis:
 sbatch <your_file_name>
 ```
 
-Your analysis will be added to the queue and you will receive an email that it has started running.
+Your analysis will be added to the queue and you will receive an email that it has started running. 
 
 You can check the status of your analysis in the queue with:
 ```
@@ -64,7 +71,7 @@ or
 squeue --account=paternabio-rw
 ```
 
-When your run is finished a slurm output file will be generated. You can check this file for information about how your job ran and to troubleshoot errors.
+When your run is finished, you will receive an email and a slurm output file will be generated. You can check this file for information about how your job ran and to troubleshoot errors.
 ```
 nano slurm-<jobID>.out
 ```
@@ -89,7 +96,7 @@ For example:
 scp /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/user/SLURM/output/2024-03-15_09-49-57_DDX4_EdU_all_images.csv /Users/user/Desktop
 ```
 
-The results can then be used in for downstream processing or visualization.
+The results can then be used for downstream processing and visualization.
 DDX4_EdU_v7_quantification_slurm.R can be used to quantify colonies, split the data up by plate, and get per well counts.  
 
 
