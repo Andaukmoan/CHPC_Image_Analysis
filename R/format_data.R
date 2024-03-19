@@ -1,39 +1,60 @@
+#!/usr/bin/env Rscript
+
+#Pass variable from bash to R
+args <- commandArgs(trailingOnly =TRUE)
+#Get file path (args[1]="--args")
+file_path <- args[2]
+
+#Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern". This pattern 
+#gets the files with per image counts.
+filenames <- list.files(path=file_path, pattern = "*_Image.csv", full.names=TRUE, recursive = TRUE)
+#Load all files as data frames in the list of data frames "ldf".
+ldf <- lapply(filenames, read.csv)
+#Create data frame to store all results in.
+df <- ldf[[1]]
+#Loop through each data frame in the list of data frames and add them to the end of the empty data frame.
+for (i in 2:length(ldf)){
+  df <- rbind(df, ldf[[i]])
+}
+#Reorder df by image number
+df <- df[order(df[,"ImageNumber"]),]
+image.data <- df
+#Get time to use as unique file name
+time <- as.character(Sys.time())
+#Remove spaces and special characters from time
+time <- gsub(" ", "_", time)
+time <- gsub(":", "-", time)
+#Save data frame with raw values from each file.
+write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_EdU_all_images.csv"), row.names = FALSE)
+
+#Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
+#This pattern gets the files with object relationships.
+filenames <- list.files(path=file_path, pattern = "*_relationship.csv", full.names=TRUE, recursive = TRUE)
+#Load all files as data frames in the list of data frames "ldf".
+ldf <- lapply(filenames, read.csv)
+#Create data frame to store all results in.
+df <- ldf[[1]]
+#Loop through each data frame in the list of data frames and add them to the end of the empty data frame.
+for (i in 2:length(ldf)){
+  df <- rbind(df, ldf[[i]])  
+}
+Per_RelationshipsView <- df
+#Get time to use as unique file name
+time <- as.character(Sys.time())
+#Remove spaces and special characters from time
+time <- gsub(" ", "_", time)
+time <- gsub(":", "-", time)
+#Save data frame with raw values from each file.
+write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_EdU_object_relationships.csv"), row.names = FALSE)
+
 #Load packages
-packages <- c("xlsx")
-install.packages(setdiff(packages, rownames(installed.packages()))) 
 library(xlsx)
-
-#Choose path to database file
-#image_counts.path <- rstudioapi::selectFile(caption = "Select output file with image counts")
-#relationships.path <- rstudioapi::selectFile(caption = "Select output file with object relationships")
-image_counts.path <- "C:/Users/olsen/Desktop/image_analysis/output/test_stardist/2024-03-18_08-55-04_DDX4_EdU_all_images.csv"
-relationships.path <- "C:/Users/olsen/Desktop/image_analysis/output/test_stardist/2024-03-18_08-55-04_DDX4_EdU_object_relationships.csv"
-
-#cpa_file_answer <- rstudioapi::showPrompt("CellProfiler Analyst selection", "Do you have files from cellprofiler analyst to use for the classification counts? (Yes/No)")
-cpa_file_answer <- "No"
-if (cpa_file_answer == "Yes"){
-#Choose path to cytoplasmic DDX4+ counts files.
-cyto_path <- rstudioapi::selectFile(caption = "Select cytoDDX4 counts file")
-#Choose path to cytoplasmic DDX4+ / EdU+ counts files.
-double_path <- rstudioapi::selectFile(caption = "Select cytoDDX4/EdU counts file")
-}
-image.data <- read.csv(image_counts.path)
-#Open CSV files from CPA.
-if (cpa_file_answer == "Yes"){
-cyto <- read.csv(cyto_path)
-double <- read.csv(double_path)  
-}
 #Subset relevant columns
 somatic <- image.data[c("Metadata_Plate","Metadata_Well","Count_Filtered_nuclei")]
 txrd <- image.data[c("Metadata_Plate","Metadata_Well","Count_Combined_DDX4")]
 somatic_edu <- image.data[c("Metadata_Plate","Metadata_Well","Count_Filtered_somatics")]
-if (cpa_file_answer == "Yes"){
-cyto <- cyto[c("Metadata_Plate", "Metadata_Well", "Positive..Cell.Count")]
-double <- double[c("Metadata_Plate", "Metadata_Well", "Positive..Cell.Count")]  
-}else{
 cyto <- image.data[c("Metadata_Plate","Metadata_Well","Count_CombinedObjects")]
 double <- image.data[c("Metadata_Plate","Metadata_Well","Count_cytoDDX4_EdU")]  
-}
 #Reorder data (just in case)
 #Order by well
 somatic <- somatic[order(somatic[,"Metadata_Well"]),]
@@ -52,10 +73,6 @@ somatic[,4] <- somatic[,3]-txrd[,3]
 somatic[,4] <- somatic[,4]-somatic_edu[,3]
 #Calculate dead DDX4 per well
 txrd["Dead_DDX4"] <- txrd[,3] - cyto[,3]
-#Check for inconsistencies between group and subgroup
-check_somatic <- somatic[somatic[,4]<0,]
-check_cyto <- cyto[cyto[,3]<double[,3],]
-check_txrd <- txrd[txrd[,4] < 0,]
 #Save per image data
 df <- cbind(somatic[c(1,2,4)],somatic_edu[,3], (txrd[,3]-cyto[,3]),cyto[,3],double[,3],(double[,3]/cyto[,3]*100))
 colnames(df) <- c("Plate", "Well","Somatic", "Somatic/EdU","Dead_DDX4","cytoDDX4","DDX4/EdU","Percent_Double")
@@ -72,7 +89,7 @@ if (length(u.Plate[,1])>1){
 names(per_plate) <- u.Plate[,1]
 #Save data sets
 for (i in 1:length(per_plate)){
-  file <- paste0(u.Plate[i,1],"_per_image_DDX4EdUv7_quantification.xlsx")
+  file <- paste0(file_path,"/counts/",u.Plate[i,1],"_per_image_DDX4EdUv7_quantification.xlsx")
   save <- per_plate[[i]]
   write.xlsx(save,file)
 }
@@ -117,17 +134,10 @@ somatic <- apply_plate(a=somatic,b="Metadata_Plate",d=sum_well, c="Metadata_Well
 txrd <- apply_plate(a=txrd,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_txrd"), f = "Count_Combined_DDX4")
 #Sum Txrd-/EdU+ cells per well per plate
 somatic_edu <- apply_plate(a=somatic_edu,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_edu"), f = "Count_Filtered_somatics")
-if (cpa_file_answer == "Yes"){
-#Sum cytoDD4+ cells per well per plate
-cyto <- apply_plate(a=cyto,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_cyto"), f = "Positive..Cell.Count")
-#Sum double positive cells per well per plate
-double <- apply_plate(a=double,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_double"), f = "Positive..Cell.Count")  
-}else{
 #Sum cytoDD4+ cells per well per plate
 cyto <- apply_plate(a=cyto,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_cyto"), f = "Count_CombinedObjects")
 #Sum double positive cells per well per plate
 double <- apply_plate(a=double,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_double"), f = "Count_cytoDDX4_EdU")  
-}
 #Calculate somatic cells per well
 somatic["Somatic_Count"] <- somatic$Count_TotalCells - txrd$Count_txrd
 somatic["Somatic_Count"] <- somatic$Somatic_Count - somatic_edu$Count_edu
@@ -151,7 +161,7 @@ counts_df <- df
 counts_per_plate <- per_plate
 #Save data sets
 for (i in 1:length(per_plate)){
-  file <- paste0(u.Plate[i,1],"_DDX4EdUv7_quantification.xlsx")
+  file <- paste0(file_path,"/counts/",u.Plate[i,1],"_DDX4EdUv7_quantification.xlsx")
   save <- per_plate[[i]]
   write.xlsx(save,file)
 }
@@ -285,7 +295,7 @@ names(per_plate) <- u.Plate[,1]
 filename <- as.data.frame(sapply(u.Plate, paste0,"_raw_colony_data.xlsx"))
 #Save each plate to a separate xlsx file.
 lapply(1:length(per_plate), function(a) write.xlsx(per_plate[[a]], 
-                                      file = filename[a,1],
+                                      file = paste0(file_path, "/counts/",filename[a,1]),
                                       row.names = FALSE))
 #Subset data frame by colony size.
 #sdf <- sdf[sdf["colony_size"]>2,]
@@ -410,7 +420,5 @@ if (length(u.Plate[,1])>1){
 filename <- as.data.frame(sapply(u.Plate, paste0,"_colony_counts_per_well.xlsx"))
 #Save each plate to a separate csv file.
 for (i in 1:length(plate_summary)){
-  write.xlsx(plate_summary[[i]], filename[i,1])
+  write.xlsx(plate_summary[[i]], paste0(file_path,"/counts/",filename[i,1]))
 }
-
-
