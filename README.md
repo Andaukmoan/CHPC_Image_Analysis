@@ -74,11 +74,11 @@ When your run is finished, you will receive an email and a slurm output file wil
 nano slurm-<jobID>.out
 ```
 
-There are output will be in a subfolder of the output path you gave named "counts". There will be two files that hold the raw output from cellprofiler for the whole data set. 
+The output will be in a subfolder of the output path you gave named "counts". There will be two files that hold the raw output from cellprofiler for the whole data set. 
 
-1. The cell counts from your analysis will be in your chosen output folder with a file name <date>_<time>_<pipeline>_all_images.csv.
+1. The cell counts from your analysis will be named <date>_<time>_<pipeline>_all_images.csv.
 
-2. The cell relationships for colony counts will be in your chosen output folder with a file name <data>_<time>_<pipeline>_object_relationships.csv.
+2. The cell relationships for colony counts will be named <data>_<time>_<pipeline>_object_relationships.csv.
 
 For example:
 
