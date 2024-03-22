@@ -11,7 +11,7 @@
 CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v7.3.cppipe
 INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/test_stardist
 OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/test_stardist
-NTASKS=64
+NTASKS=$SLURM_CPUS_ON_NODE
 
 module load deeplearning/2022.1
 
