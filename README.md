@@ -46,8 +46,6 @@ rm *.scanprotocol
 
 Set "OUTXL=" to the location for your output. This should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if it does not yet exist.
 
-The default number of tasks is 64. This is the number of cores available on our node and the number of tasks we can run at a time. If you are going to use less than 64, set the NTASK variable to the new task allotment. This prevents your analysis from getting split up into more tasks than are available. If you start more tasks than are available, the pipeline will slow down significantly.
-
 Press ctrl+X to leave the file. Save it with a unique file name to create a record of analyses that have been run and prevent making unintended changes to the base file.
 
 Set the permissions of your new file to be executable:
@@ -76,7 +74,7 @@ When your run is finished, you will receive an email and a slurm output file wil
 nano slurm-<jobID>.out
 ```
 
-There are two output files.
+There are output will be in a subfolder of the output path you gave named "counts". There will be two files that hold the raw output from cellprofiler for the whole data set. 
 
 1. The cell counts from your analysis will be in your chosen output folder with a file name <date>_<time>_<pipeline>_all_images.csv.
 
@@ -87,16 +85,25 @@ For example:
 1. 2024-03-15_09-49-57_DDX4_EdU_all_images.csv
 2. 2024-03-15_09-50-03_DDX4_EdU_object_relationships.csv
 
-Download the results by putting this code with your specific details into your terminal:
+There will also be four formatted counts files per unique plate name in the data set:
+
+    1. Raw cell counts
+    
+    2. Cell counts per well
+    
+    3. Raw colony counts
+    
+    4. Colony counts per well
+
+Download all the results by putting this code with your specific details into your terminal:
 ```
-scp /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/<your output path>/<your file name> <path to where you want to save it to your device>
+scp -r /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/<your output path>/counts <path to where you want to save it to your device>
 ```
 For example:
 ```
-scp /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/user/SLURM/output/2024-03-15_09-49-57_DDX4_EdU_all_images.csv /Users/user/Desktop
+scp -r /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/user/SLURM/output/test_stardist/counts /Users/user/Desktop
 ```
 
-The results can then be used for downstream processing and visualization.
-DDX4_EdU_v7_quantification_slurm.R can be used to quantify colonies, split the data up by plate, and get per well counts.  
+The results can then be uploaded to google drive and used for downstream analysis or visualization.  
 
 
