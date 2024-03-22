@@ -2,7 +2,7 @@
 #SBATCH --account=paternabio-rw
 #SBATCH --partition=paternabio-shared-rw
 #SBATCH --nodes=1
-#SBATCH --ntasks=64
+#SBATCH --ntasks=32
 #SBATCH --mem 256G
 #SBATCH --time=04:00:00
 #SBATCH --mail-user=zach.olsen@paternabio.com
@@ -58,8 +58,16 @@ module unload cellprofiler
 
 echo "Finished CellProfiler"
 
+OUTDIR="${OUTXL}/counts"
+
+if [ ! -d "$OUTDIR" ]; then
+  mkdir "$OUTDIR"
+fi
+
+echo "$OUTDIR"
+
 module load R
 
-Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/combine_csv.R --args "$OUTXL"
+Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data.R --args "$OUTXL"
 
 echo "Finished Analysis"

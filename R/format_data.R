@@ -48,7 +48,7 @@ time <- gsub(":", "-", time)
 write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_EdU_object_relationships.csv"), row.names = FALSE)
 
 #Load packages
-library(xlsx)
+library(openxlsx)
 #Subset relevant columns
 somatic <- image.data[c("Metadata_Plate","Metadata_Well","Count_Filtered_nuclei")]
 txrd <- image.data[c("Metadata_Plate","Metadata_Well","Count_Combined_DDX4")]
@@ -165,8 +165,7 @@ for (i in 1:length(per_plate)){
   save <- per_plate[[i]]
   write.xlsx(save,file)
 }
-#Get relationshipsview data frame
-Per_RelationshipsView <- read.csv(relationships.path)
+
 #This code is really gross. I am so sorry I did not document it better. 
 #I could not find a good way to do this, so I took a very round about way that is long and clunky and gives a ton of warning messages because I coerce the living daylights out of the data.
 #Get Neighbor relationships
