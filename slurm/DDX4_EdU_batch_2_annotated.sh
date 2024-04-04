@@ -74,6 +74,7 @@ for FOLDER in `seq 1 $NTASKS`; do
         #"--export=ALL" passes environmental variables (such as JOBID and output path) to subprocess.
         #"--export=SUBDIR=$IMGDIR" passes the variable "$IMGDIR" to the subprocess as a variable named "SUBDIR".
         #Path to script to run. This is a script that sets up a python environment and runs "stardist_v2.py" on each file in the given subdirectory.
+        #You will need to install stardist to your user directory before running this pipeline. (see CHPC_Image_Analysis readme)
         srun -n 1 -c 1 --mem-per-cpu=4gb --export=ALL,SUBDIR=$IMGDIR /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/slurm/parallel_stardist.sh
     #"&" says to create a subprocess to run in parallel (in this case, each iteration of the for loop). This does not check how many tasks are available. 
     #If you create more subprocesses than tasks available, everything will slow down (throttle) signficantly. 
@@ -119,7 +120,9 @@ echo $TASKSIZE" TASKSIZE"
 #This will prevent cellprofiler from throwing an error for trying to analyze image sets that do not exist.
 #"print i, i+e" will add the values i (the starting image set for a given task) and i+e (the ending image set for a given task) to the array.
 MYARRAY=($(awk -v SETS="$SETS" -v SIZE="$TASKSIZE" 'BEGIN{e=SIZE-1;m=SETS;for(i=1;i<=m;i+=SIZE){k=m-i;if(k<SIZE){e=k};print i, i+e}}'))
-#This will return the very first element of the array (should always be 1).
+#This will return the second element of the array (should be equal to TASKSIZE).
+#"[1]" indicates to get the second element of the array. Linux is zero indexed, so zero is the first element of an index.
+#"{}" is need around the name of the array to indicate it is an array
 echo "${MYARRAY[1]}"" START_ARRAY"
 #This will return the very last element of the array (should always be equal to SETS)
 echo "${MYARRAY[-1]}"" END_ARRAY"
@@ -134,30 +137,59 @@ if [ ! -d "$OUTXL" ]; then
 fi
 
 
-for ODD in $( eval echo {1..${#MYARRAY[@]}..2}); do
+#This for loop will go through every odd element of MYARRAY
+#"ODD=1" sets the start value for the for loop
+#"ODD<${#MYARRAY[@]}" says to keep iterating through the for loop as long as "ODD" is less than or equal to the last element of MYARRAY. 
+#"${#MYARRAY[@]" will return length of the array (versus "${MyARRAY[@]}" which will return all the elements)
+#"ODD+=2" increases "ODD" by 2 every iteration of the for loop.
+for ((ODD=1; ODD<${#MYARRAY[@]}; ODD+=2 )); do
     (
+        #This creates a unique output folder.
         OUTPUT="${OUTXL}/$ODD"
         mkdir "$OUTPUT"
+        #Run cellprofiler
+        #"-c" flag that tells cellprofiler to run headlessly (otherwise it will try to open the cellprofiler grapical user interface).
+        #"-r" flag that tells cellprofiler to run in batch mode using the supplied pipeline.
+        #"-p "$CPPIPE"" gives the path to the pipeline that cellprofiler will use.
+        #"-i "$INIMG"" sets the path to the input images
+        #"-o "$OUTPUT"" sets the path for the output (each parallel process of cellprofiler will have a unique output folder to prevent output from getting overwritten).
+        #"-f "${MYARRAY[$ODD-1]}"" gives the first image set to be used by this instance of cellprofiler (this is zero indexed, so 0 is the very first image).
+        #"-l "${MYARRAY[$ODD]}"" give the last image set to be used by this instance of cellprofiler.
         cellprofiler -c -r -p "$CPPIPE" -i "$INIMG" -o "$OUTPUT" -f "${MYARRAY[$ODD-1]}" -l "${MYARRAY[$ODD]}"
+    #"&" to create a subprocess for each iteration of the for loop that are running in parallel.
+    #Thankfully, cellprofiler is set up to handle python's GIL without additional effort on our part.
+    #MYARRAY was set up based on the number of available tasks so this should not generate more parallel processes than available tasks. 
+    #There is not another check on this, so it is possible there a situation I missed where this can generate more processes than available tasks which will overwhelm the system (just a note in case there are issues with extremely long run times). 
     )  &
 done
- 
+
+#wait until all the cellprofiler processes are finished running. 
 wait
 
+#Unload cellprofiler module (not strictly necessary)
 module unload cellprofiler
 
+#Check that cellprofiler has finished running
 echo "Finished CellProfiler"
 
+#Create output folder for merged counts (this will be counts for all the images across all instances of cellprofiler that was run).
 OUTDIR="${OUTXL}/counts"
-
 if [ ! -d "$OUTDIR" ]; then
   mkdir "$OUTDIR"
 fi
 
+#Check path to output directory (this is the output that will actually be uploaded to google drive).
 echo "$OUTDIR"
 
+#Load module for R. (The base R module has all of the packages that are necessary for this pipeline)
 module load R
 
+#Run R script.
+#This script will take the output from all the instances of cellprofiler (potentially as many as 64) and merge them into a single output (saved as a cvs).
+#This script will then take the merged output and format the data by plate. It will save four excel files for each unique plate name in the data set.
+#"Rscript" lets the machine know that it is being given a file that should be run in R (this could also be done with a shebang).
+#"--args "$OUTXL"" passes the output directory variable to the R environment.
 Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_2.R --args "$OUTXL"
 
+#Check that the pipeline has finished
 echo "Finished Analysis"
