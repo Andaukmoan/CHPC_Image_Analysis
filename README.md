@@ -74,17 +74,18 @@ When your run is finished, you will receive an email and a slurm output file wil
 nano slurm-<jobID>.out
 ```
 
-The output will be in a subfolder of the output path you gave named "counts". There will be two files that hold the raw output from cellprofiler for the whole data set. 
+The output will be in a subfolder of the output path you gave named "counts". There will be three files that hold the raw output from cellprofiler for the whole data set. 
 
-1. The cell counts from your analysis will be named <date>_<time>_<pipeline>_all_images.csv.
+    1. The cell counts from your analysis will be named <date>_<time>_<pipeline>_all_images.csv.  
 
-2. The cell relationships for colony counts will be named <data>_<time>_<pipeline>_object_relationships.csv.
-
+    2. The cell relationships for colony counts will be named <data>_<time>_<pipeline>_object_relationships.csv.
+    
+    3. The measurements for the cells will be named <data>_<time>_<pipeline>_filtered_nuclei.csv.
 For example:
 
-1. 2024-03-15_09-49-57_DDX4_EdU_all_images.csv
-2. 2024-03-15_09-50-03_DDX4_EdU_object_relationships.csv
-
+    1. 2024-03-15_09-49-57_DDX4_EdU_all_images.csv
+    2. 2024-03-15_09-50-03_DDX4_EdU_object_relationships.csv
+    3. 2024-03-15_09-50-04_DDX4_EdU_filtered_nuclei.csv
 There will also be four formatted counts files per unique plate name in the data set:
 
     1. Raw cell counts
