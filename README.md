@@ -11,7 +11,7 @@ The dependencies for stardist are in the module "deeplearning/2022.1"
 ```
 module load deeplearning/2022.1
 ```
-You will then need to install stardist into your home directory.
+You will then need to install stardist into your home directory with deeplearning/2022.1 loaded into the environment.
 1. Set user base to your home directory if not already set.
 ```
 export PYTHONUSERBASE=/uufs/chpc.utah.edu/common/HIPAA/<your ID>
