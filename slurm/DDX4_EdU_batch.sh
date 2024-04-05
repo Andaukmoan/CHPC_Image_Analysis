@@ -8,9 +8,12 @@
 #SBATCH --mail-user=zach.olsen@paternabio.com
 #SBATCH --mail-type=ALL
 
-CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v7.4.cppipe
+#Path to input folder. This folder cannot have any other files in it except the files for analysis. The files cannot be in a subfolder.
 INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/test_stardist
+#Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
 OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/test_stardist
+#Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
+CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v7.4.cppipe
 NTASKS=$SLURM_CPUS_ON_NODE
 
 FOLDERSIZE=$(($(find $INIMG/* -maxdepth 0 -type f | wc -l)/$NTASKS+1))
@@ -50,16 +53,12 @@ if [ ! -d "$OUTXL" ]; then
   mkdir "$OUTXL"
 fi
 
-for ODD in $( eval echo {1..${#MYARRAY[@]}..2}); do
+for ((ODD=1; ODD<${#MYARRAY[@]}; ODD+=2)); do
     (
         OUTPUT="${OUTXL}/$ODD"
         mkdir "$OUTPUT"
         cellprofiler -c -r -p "$CPPIPE" -i "$INIMG" -o "$OUTPUT" -f "${MYARRAY[$ODD-1]}" -l "${MYARRAY[$ODD]}"
     )  &
-    if [[ $(jobs -r -p | wc -l) -ge $NTASKS ]]; then
-        wait -n
-    fi
-
 done
  
 wait
