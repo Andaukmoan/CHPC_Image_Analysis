@@ -159,7 +159,7 @@ for ((ODD=1; ODD<${#MYARRAY[@]}; ODD+=2 )); do
     #"&" to create a subprocess for each iteration of the for loop that are running in parallel.
     #Thankfully, cellprofiler is set up to handle python's GIL without additional effort on our part.
     #MYARRAY was set up based on the number of available tasks so this should not generate more parallel processes than available tasks. 
-    #There is not another check on this, so it is possible there a situation I missed where this can generate more processes than available tasks which will overwhelm the system (just a note in case there are issues with extremely long run times). 
+    #There is not another check on this, so it is possible there is a situation I missed where this can generate more processes than available tasks which will overwhelm the system (just a note in case there are issues with extremely long run times). 
     )  &
 done
 
