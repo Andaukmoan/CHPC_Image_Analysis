@@ -107,4 +107,4 @@ scp -r /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/user/SLURM/output/test_s
 
 The results can then be uploaded to google drive and used for downstream analysis or visualization.  
 
-
+If you directly upload scripts from this repository to CHPC, they will not run. The file formatting of this repository is not compatible with linux (I really need to fix that sorry). You will need to create a new document on CHPC then copy and paste the code over.
