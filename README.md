@@ -20,6 +20,17 @@ export PYTHONUSERBASE=/uufs/chpc.utah.edu/common/HIPAA/<your ID>
 ```
 python -m pip install --user stardist
 ```
+# Upload images
+
+You can upload images to CHPC from the image analysis computer terminal using:
+```
+rsync -avP <local_path_to_images> <user_ID>@redwood.chpc.utah.edu:/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images 
+```
+
+Windows does not come with "rsync", so use "scp" instead.
+```
+scp -r <local_path_to_images> <user_ID>@redwood.chpc.utah.edu:/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images 
+```
 
 # Submit batch
 
