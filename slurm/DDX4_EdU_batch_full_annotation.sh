@@ -1,5 +1,5 @@
 
-#Shebang that sets type of file this (bash) and how to process it. For shell (.sh) scripts, this will always be bash. (probably)
+#Shebang that sets type of file this is and how to process it. For shell (.sh) scripts, this will always be bash. (probably)
 #!/bin/bash 
 
 #"SBATCH"" option that sets what account to use for this file
