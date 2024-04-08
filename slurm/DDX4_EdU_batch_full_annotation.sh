@@ -139,7 +139,7 @@ fi
 
 #This for loop will go through every odd element of MYARRAY
 #"ODD=1" sets the start value for the for loop
-#"ODD<${#MYARRAY[@]}" says to keep iterating through the for loop as long as "ODD" is less than or equal to the last element of MYARRAY. 
+#"ODD<${#MYARRAY[@]}" says to keep iterating through the for loop as long as "ODD" is less than the last element of MYARRAY. 
 #"${#MYARRAY[@]" will return length of the array (versus "${MyARRAY[@]}" which will return all the elements)
 #"ODD+=2" increases "ODD" by 2 every iteration of the for loop.
 for ((ODD=1; ODD<${#MYARRAY[@]}; ODD+=2 )); do
