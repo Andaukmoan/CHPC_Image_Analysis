@@ -24,8 +24,27 @@ python -m pip install --user stardist
 # Submit batch
 
 The pipelines from this repository can be found in proj_paternabio/image_analysis/slurm.
+
+To run this pipeline, go to the slurm folder.
 ```
 cd /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/slurm
+```
+Make a new folder to store your unique run.
+```
+mkdir runs/<your_folder_name)
+```
+Copy the pipeline you are going to run to the new folder.
+```
+cp <pipeline> runs/<your_folder_name>
+```
+Example:
+```
+cp DDX4_EdU_batch.sh runs/DDX4_EdU_batch_16
+```
+
+Go to the new folder.
+```
+cd runs/<your_folder_name>
 ```
 
 Open the pipeline you are going to run.
@@ -37,21 +56,31 @@ nano DDX4_EdU_batch.sh
 
 Set "#SBATCH --mail-user=" to your email. You will receive emails when jobs start and finish.
 
-Set "INIMG=" to the location of the images you are analyzing. This pipeline assumes only files that need to be analyzed are in that folder. Remove any files in the folder that are not meant to be analyzed before running the script. Most often the issue comes from jpg and scanprotocol files. You can remove them using:
+Set "INIMG=" to the location of the images you are analyzing. This pipeline assumes only files that need to be analyzed are in that folder. Images to be analyzed cannot be in subfolders. Remove any files in the folder that are not meant to be analyzed before running the script. Most often the issue comes from jpg and scanprotocol files. 
+You can remove them using:
 ```
 cd /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/<your folder>
 rm *.jpg
 rm *.scanprotocol
 ```
+Or you can move all TIF files to a new folder (especially useful if you have multiple subfolders with images):
+```
+find <path_to_folder_with your images> -name "*.TIF" -type f | xargs -i mv "{}" <path_to_folder_to_move_images_to>
+```
 
 Set "OUTXL=" to the location for your output. This should be a unique location so that files from multiple analysis are not merged in the output. The pipeline will make the directory if it does not yet exist.
 
-Press ctrl+X to leave the file. Save it with a unique file name to create a record of analyses that have been run and prevent making unintended changes to the base file.
+Press ctrl+X to leave the file. Save it with a unique file name to create a record of analyses that have been run.
 
 Set the permissions of your new file to be executable:
 ```
 chmod 755 <your_file_name>
 ```
+You can check permissions for all files in a folder with:
+```
+ls -l
+```
+You should see "rwx" by your file indicating it is readable (r), writable (w), and executable (x). 
 
 Run your analysis:
 ```
@@ -69,7 +98,7 @@ or
 squeue --account=paternabio-rw
 ```
 
-When your run is finished, you will receive an email and a slurm output file will be generated. You can check this file for information about how your job ran and to troubleshoot errors.
+When your run is finished, you will receive an email and a slurm output file will be generated. You can check this file for information about how your job ran and to troubleshoot errors. This file will be in the directory you were in when you submitted the job.
 ```
 nano slurm-<jobID>.out
 ```
