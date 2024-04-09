@@ -77,6 +77,6 @@ echo "$OUTDIR"
 
 module load R
 
-Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_2.R --args "$OUTXL"
+Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_3.R --args "$OUTXL"
 
 echo "Finished Analysis"
