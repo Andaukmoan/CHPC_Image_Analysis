@@ -114,6 +114,8 @@ When your run is finished, you will receive an email and a slurm output file wil
 nano slurm-<jobID>.out
 ```
 
+# Output
+
 The output will be in a subfolder of the output path you gave named "counts". There will be three files that hold the raw output from cellprofiler for the whole data set. 
 
     1. The cell counts from your analysis will be named <date>_<time>_<pipeline>_all_images.csv.  
