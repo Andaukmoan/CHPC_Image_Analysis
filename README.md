@@ -126,7 +126,10 @@ For example:
     1. 2024-03-15_09-49-57_DDX4_EdU_all_images.csv
     2. 2024-03-15_09-50-03_DDX4_EdU_object_relationships.csv
     3. 2024-03-15_09-50-04_DDX4_EdU_filtered_nuclei.csv
-There will also be four formatted counts files per unique plate name in the data set:
+
+There will also be a folder for each unique plate name in the data set.
+
+Each folder will have four formatted counts files per unique plate name in the data set (depending on the pipeline):
 
     1. Raw cell counts
     
