@@ -29,26 +29,6 @@ write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_SSEA4_all_images.csv"
 
 #Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
 #This pattern gets the files with object relationships.
-filenames <- list.files(path=file_path, pattern = "*_relationship.csv", full.names=TRUE, recursive = TRUE)
-#Load all files as data frames in the list of data frames "ldf".
-ldf <- lapply(filenames, read.csv)
-#Create data frame to store all results in.
-df <- ldf[[1]]
-#Loop through each data frame in the list of data frames and add them to the end of the empty data frame.
-for (i in 2:length(ldf)){
-  df <- rbind(df, ldf[[i]])  
-}
-Per_RelationshipsView <- df
-#Get time to use as unique file name
-time <- as.character(Sys.time())
-#Remove spaces and special characters from time
-time <- gsub(" ", "_", time)
-time <- gsub(":", "-", time)
-#Save data frame with raw values from each file.
-write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_SSEA4_object_relationships.csv"), row.names = FALSE)
-
-#Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
-#This pattern gets the files with object relationships.
 filenames <- list.files(path=file_path, pattern = "*_Filterednuclei.csv", full.names=TRUE, recursive = TRUE)
 #Load all files as data frames in the list of data frames "ldf".
 ldf <- lapply(filenames, read.csv)
@@ -66,50 +46,13 @@ time <- gsub(":", "-", time)
 #Save data frame with raw values from each file.
 write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_SSEA4_nuclei.csv"), row.names = FALSE)
 
-#Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
-#This pattern gets the files with object relationships.
-filenames <- list.files(path=file_path, pattern = "*_Cytoplasm.csv", full.names=TRUE, recursive = TRUE)
-#Load all files as data frames in the list of data frames "ldf".
-ldf <- lapply(filenames, read.csv)
-#Create data frame to store all results in.
-df <- ldf[[1]]
-#Loop through each data frame in the list of data frames and add them to the end of the empty data frame.
-for (i in 2:length(ldf)){
-  df <- rbind(df, ldf[[i]])  
-}
-#Get time to use as unique file name
-time <- as.character(Sys.time())
-#Remove spaces and special characters from time
-time <- gsub(" ", "_", time)
-time <- gsub(":", "-", time)
-#Save data frame with raw values from each file.
-write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_SSEA4_cytoplasm.csv"), row.names = FALSE)
-
-#Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
-#This pattern gets the files with object relationships.
-filenames <- list.files(path=file_path, pattern = "*_IdentifySecondaryObjects.csv", full.names=TRUE, recursive = TRUE)
-#Load all files as data frames in the list of data frames "ldf".
-ldf <- lapply(filenames, read.csv)
-#Create data frame to store all results in.
-df <- ldf[[1]]
-#Loop through each data frame in the list of data frames and add them to the end of the empty data frame.
-for (i in 2:length(ldf)){
-  df <- rbind(df, ldf[[i]])  
-}
-#Get time to use as unique file name
-time <- as.character(Sys.time())
-#Remove spaces and special characters from time
-time <- gsub(" ", "_", time)
-time <- gsub(":", "-", time)
-#Save data frame with raw values from each file.
-write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_SSEA4_secondaryobjects.csv"), row.names = FALSE)
 
 #Load packages
 library(openxlsx)
 #Subset relevant columns
 somatic <- image.data[c("Metadata_Plate","Metadata_Well","Count_Filterednuclei")]
 cyto <- image.data[c("Metadata_Plate","Metadata_Well","Count_cytoDDX4")]
-double <- image.data[c("Metadata_Plate","Metadata_Well","Count_cytoDDX4_SSEA4")]  
+double <- image.data[c("Metadata_Plate","Metadata_Well","Count_DDX4_SSEA4")]  
 #Reorder data (just in case)
 #Order by well
 somatic <- somatic[order(somatic[,"Metadata_Well"]),]
@@ -186,7 +129,7 @@ cyto <- apply_plate(a=cyto,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c
 #Sum double positive cells per well per plate
 double <- apply_plate(a=double,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_double"), f = "Count_cytoDDX4_SSEA4")  
 #Calculate somatic cells per well
-somatic["Somatic_Count"] <- somatic$Count_TotalCells - cyto$Count_cytoDDX4
+somatic["Somatic_Count"] <- somatic$Count_TotalCells - cyto$Count_cyto
 #Combine data sets and resolve NaN
 df <- cbind(somatic[c(1,2,4)], cyto[,3],double[,3],(double[,3]/cyto[,3]*100))
 colnames(df) <- c("Plate", "Well","Somatic","cytoDDX4","DDX4/SSEA4","Percent_Double")
