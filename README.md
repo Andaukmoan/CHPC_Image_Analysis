@@ -85,7 +85,7 @@ Press ctrl+X to leave the file. Save it with a unique file name to create a reco
 
 Set the permissions of your new file to be executable:
 ```
-chmod 755 <your_file_name>
+chmod 775 <your_file_name>
 ```
 You can check permissions for all files in a folder with:
 ```
