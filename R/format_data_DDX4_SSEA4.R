@@ -127,7 +127,7 @@ somatic <- apply_plate(a=somatic,b="Metadata_Plate",d=sum_well, c="Metadata_Well
 #Sum cytoDD4+ cells per well per plate
 cyto <- apply_plate(a=cyto,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_cyto"), f = "Count_cytoDDX4")
 #Sum double positive cells per well per plate
-double <- apply_plate(a=double,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_double"), f = "Count_cytoDDX4_SSEA4")  
+double <- apply_plate(a=double,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_double"), f = "Count_DDX4_SSEA4")  
 #Calculate somatic cells per well
 somatic["Somatic_Count"] <- somatic$Count_TotalCells - cyto$Count_cyto
 #Combine data sets and resolve NaN
