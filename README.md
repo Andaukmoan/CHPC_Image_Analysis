@@ -1,6 +1,6 @@
 ### This repository is for the basics of running our image analysis pipeline on the University of Utah's CHPC.
 
-In order to use PaternaBio's allocation on the Redwood cluster, you will need to get an account with CHPC, complete their protected enivronment(PE) application, ask for access to proj_paternabio (redwood cluster), and ask for access to submit batches to paternabio-rw.
+In order to use PaternaBio's allocation on the Redwood cluster, you will need to get an account with CHPC, complete their protected enivronment(PE) application ([link](https://www.chpc.utah.edu/resources/ProtectedEnvironment.php)), ask for access to proj_paternabio (redwood cluster), and ask for access to submit batches to paternabio-rw.
 More details for setting up your CHPC account can be found on their website. ([CHPC Documentation](https://www.chpc.utah.edu/documentation/gettingstarted.php))
 
 # Setup
