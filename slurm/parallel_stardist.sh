@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --mem=4G
 #SBATCH --time=01:00:00
-#SBATCH --mail-user=zach.olsen@paternabio.com
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 
 
