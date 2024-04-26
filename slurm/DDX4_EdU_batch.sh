@@ -5,7 +5,7 @@
 #SBATCH --ntasks=64
 #SBATCH --mem 512G
 #SBATCH --time=06:00:00
-#SBATCH --mail-user=zach.olsen@paternabio.com
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 
 #Path to input folder. This folder cannot have any other files in it except the files for analysis. The files cannot be in a subfolder.
