@@ -25,7 +25,7 @@
 #SBATCH --time=06:00:00
 
 #"SBATCH"" option that sets user to email job status.
-#SBATCH --mail-user=zach.olsen@paternabio.com
+#SBATCH --mail-user=
 
 #"SBATCH"" option that sets what type of mail to receive. Default is an email when the job starts, an email when the job finishes, and an email if there is an error.
 #SBATCH --mail-type=ALL
