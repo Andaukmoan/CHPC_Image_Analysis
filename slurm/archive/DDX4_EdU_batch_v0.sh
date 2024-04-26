@@ -5,7 +5,7 @@
 #SBATCH --ntasks=32
 #SBATCH --mem 256G
 #SBATCH --time=04:00:00
-#SBATCH --mail-user=zach.olsen@paternabio.com
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 
 CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v7.3.cppipe
