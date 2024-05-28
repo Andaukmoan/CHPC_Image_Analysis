@@ -3,17 +3,17 @@
 #SBATCH --partition=paternabio-shared-rw
 #SBATCH --nodes=1
 #SBATCH --ntasks=64
-#SBATCH --mem 384G
-#SBATCH --time=24:00:00
-#SBATCH --mail-user=zach.olsen@paternabio.com
+#SBATCH --mem 512G
+#SBATCH --time=06:00:00
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 
 #Path to input folder. This folder cannot have any other files in it except the files for analysis. The files cannot be in a subfolder.
-INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/02_Processed/test_stardist
+INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/test_stardist
 #Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
 OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/test_stardist
 #Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
-CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v8.4.cppipe
+CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v7.4.cppipe
 NTASKS=$SLURM_CPUS_ON_NODE
 
 FOLDERSIZE=$(($(find $INIMG/* -maxdepth 0 -type f | wc -l)/$NTASKS+1))
@@ -67,14 +67,6 @@ module unload cellprofiler
 
 echo "Finished CellProfiler"
 
-OUTIMAGE="${OUTXL}/images"
-
-if [ ! -d "$OUTIMAGE" ]; then
-  mkdir "$OUTIMAGE"
-fi
-
-find $OUTXL -name "*.jpeg" -type f | xargs -i mv "{}" $OUTIMAGE
-
 OUTDIR="${OUTXL}/counts"
 
 if [ ! -d "$OUTDIR" ]; then
@@ -85,6 +77,6 @@ echo "$OUTDIR"
 
 module load R
 
-Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_5.R --args "$OUTXL"
+Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_3.R --args "$OUTXL"
 
 echo "Finished Analysis"

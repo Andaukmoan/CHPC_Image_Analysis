@@ -25,7 +25,7 @@ time <- as.character(Sys.time())
 time <- gsub(" ", "_", time)
 time <- gsub(":", "-", time)
 #Save data frame with raw values from each file.
-write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_EdU_all_images.csv"), row.names = FALSE)
+write.csv(df, file=paste0(file_path,"/counts/",time,"DDX4_EdU_all_images.csv"), row.names = FALSE)
 
 #Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
 #This pattern gets the files with object relationships.
