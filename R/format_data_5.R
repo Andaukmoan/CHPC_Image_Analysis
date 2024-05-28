@@ -49,7 +49,7 @@ write.csv(df, file=paste0(file_path,"/counts/",time,"_DDX4_EdU_object_relationsh
 
 #Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
 #This pattern gets the files with object relationships.
-filenames <- list.files(path=file_path, pattern = "*_Filtered_nuclei.csv", full.names=TRUE, recursive = TRUE)
+filenames <- list.files(path=file_path, pattern = "*_Filterednuclei.csv", full.names=TRUE, recursive = TRUE)
 #Load all files as data frames in the list of data frames "ldf".
 ldf <- lapply(filenames, read.csv)
 #Create data frame to store all results in.
@@ -111,7 +111,7 @@ if(length(filenames) > 1){
 #Load packages
 library(xlsx)
 #Subset relevant columns
-somatic <- image.data[c("Metadata_Plate","Metadata_Well","Count_Filtered_nuclei")]
+somatic <- image.data[c("Metadata_Plate","Metadata_Well","Count_Filterednuclei")]
 txrd <- image.data[c("Metadata_Plate","Metadata_Well","Count_Combined_DDX4")]
 somatic_edu <- image.data[c("Metadata_Plate","Metadata_Well","Count_Filtered_somatics")]
 cyto <- image.data[c("Metadata_Plate","Metadata_Well","Count_CombinedObjects")]
@@ -193,7 +193,7 @@ apply_plate <- function(a="df", b="Metadata_Plate",d="Function", c="Well", e="Co
   return(temp)
 }
 #Sum somatic cells per well per plate
-somatic <- apply_plate(a=somatic,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_TotalCells"), f = "Count_Filtered_nuclei")
+somatic <- apply_plate(a=somatic,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_TotalCells"), f = "Count_Filterednuclei")
 #Sum Txrd+ cells per well per plate
 txrd <- apply_plate(a=txrd,b="Metadata_Plate",d=sum_well, c="Metadata_Well", e=c("Metadata_Plate","Metadata_Well","Count_txrd"), f = "Count_Combined_DDX4")
 #Sum Txrd-/EdU+ cells per well per plate
