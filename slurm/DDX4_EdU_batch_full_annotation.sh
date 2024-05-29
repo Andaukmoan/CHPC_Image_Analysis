@@ -35,7 +35,7 @@ INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/tes
 #Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
 OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/test_stardist
 #Path to cellprofiler pipeline. This works best with a ".cppipe" file, so that we can set the images to be analyzed to our input directory.
-CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v7.4.cppipe
+CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v8.4.cppipe
 #This gets the number of tasks available for this job. This is the value set by "#SBATCH --ntasks="
 NTASKS=$SLURM_CPUS_ON_NODE
 
@@ -172,6 +172,16 @@ module unload cellprofiler
 #Check that cellprofiler has finished running
 echo "Finished CellProfiler"
 
+#Create output folder for annotated images
+OUTIMAGE="${OUTXL}/images"
+if [ ! -d "$OUTIMAGE" ]; then
+  mkdir "$OUTIMAGE"
+fi
+
+#Move all the annotated output images to a single folder. This makes handling them easier.
+#This gets all files in the given $OUTXL folder and subfolders with the pattern "*.jpeg" (* means "anything") and moves them to the $OUTIMAGE folder. 
+find $OUTXL -name "*.jpeg" -type f | xargs -i mv "{}" $OUTIMAGE
+
 #Create output folder for merged counts (this will be counts for all the images across all instances of cellprofiler that was run).
 OUTDIR="${OUTXL}/counts"
 if [ ! -d "$OUTDIR" ]; then
@@ -189,7 +199,7 @@ module load R
 #This script will then take the merged output and format the data by plate. It will save four excel files for each unique plate name in the data set.
 #"Rscript" lets the machine know that it is being given a file that should be run in R (this could also be done with a shebang).
 #"--args "$OUTXL"" passes the output directory variable to the R environment.
-Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_2.R --args "$OUTXL"
+Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_5.R --args "$OUTXL"
 
 #Check that the pipeline has finished
 echo "Finished Analysis"
