@@ -72,15 +72,8 @@ module unload cellprofiler
 
 echo "Finished CellProfiler"
 
-OUTIMAGE="${OUTXL}/images"
 
-if [ ! -d "$OUTIMAGE" ]; then
-  mkdir "$OUTIMAGE"
-fi
-
-#Move all the annotated output images to a single folder. This makes handling them easier.
-find $OUTXL -name "*.jpeg" -type f | xargs -i mv "{}" $OUTIMAGE
-
+#Create directory to store formatted counts
 OUTDIR="${OUTXL}/counts"
 
 if [ ! -d "$OUTDIR" ]; then
@@ -93,5 +86,33 @@ module load R
 
 #Run an r script to format the data by plate and create subfolders for each experiment that can be directly uploaded to google drive and shared with everyone.
 Rscript /uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/R/format_data_5.R --args "$OUTXL"
+
+module unload R
+
+echo "Finished R script"
+
+#Move all the annotated output images to a single folder. This makes handling them easier.
+OUTIMAGE="${OUTXL}/images"
+
+if [ ! -d "$OUTIMAGE" ]; then
+  mkdir "$OUTIMAGE"
+fi
+
+find $OUTXL -name "*.jpeg" -type f | xargs -i mv "{}" $OUTIMAGE
+
+#Split up the annotated images by plate. This will go through each unique plate in the data set and move the associated images to the folder that has the formatted output for that plate. This allows for the folder to be directly uploaded to google drive with all the relevant files for the given plate. 
+CDIR=$PWD
+cd $OUTDIR
+shopt -s nullglob
+array=(*)
+shopt -u nullglob
+CDIR=$PWD
+
+for ((FOLDER=0; FOLDER<="${#array[@]}"; FOLDER+=1));
+do
+    OUTFOLDER="$OUTDIR/${array[$FOLDER]}"
+    echo $OUTFOLDER" FOLDER "$FOLDER  
+    find $OUTIMAGE -name "${array[$FOLDER]}*" -type f | xargs -i mv "{}" "$OUTFOLDER"
+done
 
 echo "Finished Analysis"
