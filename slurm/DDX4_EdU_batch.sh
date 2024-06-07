@@ -12,7 +12,7 @@
 INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/02_Processed/test_stardist
 #Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
 OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/test_stardist
-#Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
+#Path to CellProfiler pipeline.
 CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v8.4.cppipe
 NTASKS=$SLURM_CPUS_ON_NODE
 
