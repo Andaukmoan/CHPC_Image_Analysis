@@ -106,7 +106,7 @@ cd $OUTDIR
 shopt -s nullglob
 array=(*)
 shopt -u nullglob
-CDIR=$PWD
+cd $CDIR
 
 for ((FOLDER=0; FOLDER<="${#array[@]}"; FOLDER+=1));
 do
