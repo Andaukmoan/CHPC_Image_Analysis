@@ -9,16 +9,19 @@
 #SBATCH --mail-type=ALL
 
 #Path to input folder. This folder cannot have any other files in it except the files for analysis. The files cannot be in a subfolder.
-INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/02_Processed/test_stardist
+INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/DDX4_EdU_batch_22
 #Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
-OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/test_stardist
-#Path to CellProfiler pipeline.
+OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/DDX4_EdU_batch_22
+#Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
 CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v8.4.cppipe
 NTASKS=$SLURM_CPUS_ON_NODE
 
 #Split images into folders that can each be analyzed separately based on the number of available tasks.
 FOLDERSIZE=$(($(find $INIMG/* -maxdepth 0 -type f | wc -l)/$NTASKS+1))
+NUMNUCLEI=$(($(find $INIMG/* -maxdepth 0 -name "*d0.TIF" -type f | wc -l)))
+echo $NUMNUCLEI" NUMNUCLEI"
 echo $FOLDERSIZE" FOLDERSIZE"
+
 for FOLDER in `seq 1 $NTASKS`;
 do
     mkdir -p "$INIMG/$FOLDER";
@@ -38,6 +41,14 @@ echo "Finished Segmentation"
 
 #Move all images from subfolders into main folder. CellProfiler sometimes gets tripped up by subfolders.
 find $INIMG/* -maxdepth 1 -type f | xargs -i mv "{}" $INIMG
+
+NUMSTAR=$(($(find $INIMG/* -maxdepth 0 -name "*labels.tif" -type f | wc -l)))
+echo $NUMSTAR" NUMSTAR"
+
+if [ $NUMSTAR != $NUMNUCLEI ]; then
+  echo "Error: Incomplete Segmentation. Check for missing labels and the presence of merged/display files"
+  exit
+fi
 
 #Get the number of images sets ($SETS). 
 LENGTH=($(find $INIMG/* -maxdepth 0 -type f | wc -l))
@@ -106,7 +117,7 @@ cd $OUTDIR
 shopt -s nullglob
 array=(*)
 shopt -u nullglob
-cd $CDIR
+CDIR=$PWD
 
 for ((FOLDER=0; FOLDER<="${#array[@]}"; FOLDER+=1));
 do
