@@ -110,7 +110,7 @@ if(length(filenames) > 1){
 
 #Get file names for all files in the folder (including subfolders) indicated by "path" that are the file type indicated by "pattern".
 #This pattern gets the files with object relationships.
-filenames <- list.files(path=file_path, pattern = "*_env.csv", full.names=TRUE, recursive = TRUE)
+filenames <- list.files(path=file_path, pattern = "*_Env.csv", full.names=TRUE, recursive = TRUE)
 if(length(filenames) > 1){
   #Load all files as data frames in the list of data frames "ldf".
   ldf <- lapply(filenames, read.csv)
