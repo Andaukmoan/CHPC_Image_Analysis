@@ -45,6 +45,7 @@ find $INIMG/* -maxdepth 1 -type f | xargs -i mv "{}" $INIMG
 NUMSTAR=$(($(find $INIMG/* -maxdepth 0 -name "*labels.tif" -type f | wc -l)))
 echo $NUMSTAR" NUMSTAR"
 
+#Check if there is a segmented image for each nuclei image before continuing to cellprofiler, so you don't find out after cellprofiler has run for hours.
 if [ $NUMSTAR != $NUMNUCLEI ]; then
   echo "Error: Incomplete Segmentation. Check for missing labels and the presence of merged/display files"
   exit
