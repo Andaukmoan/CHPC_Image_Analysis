@@ -12,7 +12,7 @@
 INIMG=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/images/DDX4_EdU_batch_22
 #Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
 OUTXL=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/output/DDX4_EdU_batch_22
-#Path to output folder. This folder needs to be unique to each run otherwise files will get over written or combined.
+#Path CellProfiler Pipeline File.
 CPPIPE=/uufs/chpc.utah.edu/common/HIPAA/proj_paternabio/image_analysis/v7_DDX4_EdU/DDX4_EdU_v8.4.cppipe
 NTASKS=$SLURM_CPUS_ON_NODE
 
@@ -112,6 +112,8 @@ fi
 find $OUTXL -name "*.jpeg" -type f | xargs -i mv "{}" $OUTIMAGE
 
 #Split up the annotated images by plate. This will go through each unique plate in the data set and move the associated images to the folder that has the formatted output for that plate. This allows for the folder to be directly uploaded to google drive with all the relevant files for the given plate. 
+
+#Get list of folders in counts folder
 CDIR=$PWD
 cd $OUTDIR
 shopt -s nullglob
@@ -119,6 +121,7 @@ array=(*)
 shopt -u nullglob
 CDIR=$PWD
 
+#Move images to folder with matching name
 for ((FOLDER=0; FOLDER<="${#array[@]}"; FOLDER+=1));
 do
     OUTFOLDER="$OUTDIR/${array[$FOLDER]}"
