@@ -120,7 +120,7 @@ cd $OUTDIR
 shopt -s nullglob
 array=(*)
 shopt -u nullglob
-cd CDIR
+cd $CDIR
 
 #Move images to folder with matching name
 for ((FOLDER=0; FOLDER<="${#array[@]}"; FOLDER+=1));
